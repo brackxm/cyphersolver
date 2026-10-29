@@ -1,0 +1,122 @@
+[
+ {
+  "year": 1781,
+  "date": "26 Apr - 5 May 1781",
+  "title": "Cornwallis papers: Balfour, Rawdon and Craig letters left in cipher and undeciphered",
+  "correspondents": "Balfour / Rawdon / J. H. Craig to Cornwallis",
+  "place": "Charles Town, Camden, Wilmington",
+  "language": "English",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "TNA PRO 30/11/6/23, 6/25-26, 6/54; PRO 30/11/69/16-18",
+  "folio_note": "about 6 items; catalogue: 'Mostly in cipher and not deciphered', 'In cipher and undeciphered'",
+  "cls": "B",
+  "status": "Catalogue marks each undeciphered. Neighbours were read in targets/balfour1781 (confirm which of these are already inside it). Not digitised. Not on DECODE.",
+  "why": "Southern campaign 1781 despatches; a key family already exists.",
+  "importance": 4,
+  "solvability": 3,
+  "difficulty": 2,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Compare PRO 30/11/6/23, /25, /54 with targets/balfour1781/NOTES.md; then get copies.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C6671501"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1780,
+  "date": "10 Oct 1780",
+  "title": "Cornwallis papers: Charlotte Town, money to Major Wemyss, number cipher not deciphered",
+  "correspondents": "unknown (Cornwallis circle) to Major James Wemyss",
+  "place": "Charlotte Town (Charlotte, NC)",
+  "language": "English",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "TNA PRO 30/11/3/207-209 (Cornwallis Papers, Packet 3)",
+  "folio_note": "3 items (ff. 207-209); catalogue: 'In number cipher, not deciphered'",
+  "cls": "C",
+  "status": "Catalogue: 'In number cipher, not deciphered'. Not digitised at TNA (Discovery digitised=false); microfilm of PRO 30/11 exists (UNB Loyalist collection). Not on DECODE (known.py). Related to targets/balfour1781 and the Saberton/Lovell southern British ciphers.",
+  "why": "Number cipher of the Carolina campaign; the known British southern keys may fit.",
+  "importance": 4,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Get a TNA copy or the microfilm; test the balfour1781 'Common cipher' key against the numbers.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C6671059"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found); Saberton 2019 not read in full",
+  "access": "archive"
+ },
+ {
+  "year": 1879,
+  "date": "May-Jun 1879",
+  "title": "Zulu War cipher telegrams (Fort Pearson, Crealock) in the Templer Study Centre; one Boer War telegram 'not deciphered'",
+  "correspondents": "Pearson, Crealock to Military Secretary",
+  "place": "Fort Pearson, Natal",
+  "language": "English",
+  "region": "Other",
+  "period": "1801-1900",
+  "shelfmark": "National Army Museum, 6807/386/13/42, 6807/386/15/9, 6807/386/15/16; 6807/386/7/53",
+  "folio_note": "several telegrams",
+  "cls": "C",
+  "status": "Catalogue only; field codes. 7/53 is 'not deciphered'.",
+  "why": "Prince Imperial's death week.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Ask the NAM.",
+  "links": [
+   {
+    "label": "Discovery search",
+    "href": "https://discovery.nationalarchives.gov.uk/results/r?_q=cipher%20telegram%20Fort%20Pearson"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1791,
+  "date": "28 Mar 1791",
+  "title": "Boulton family: letter 'entirely in secret writing' (No. 11)",
+  "correspondents": "Matthew Boulton circle",
+  "place": "Birmingham",
+  "language": "unknown",
+  "region": "England",
+  "period": "1701-1800",
+  "shelfmark": "Birmingham Archives, MS 3782/12/91/127",
+  "folio_note": "1 letter",
+  "cls": "C",
+  "status": "Catalogue only; a letter of 1765 (MS 3782/12/60/19) explains a vowel-number cipher, possibly the same habit.",
+  "why": "French coinage business; low value.",
+  "importance": 1,
+  "solvability": 3,
+  "difficulty": 1,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Check the 1765 letter for the key.",
+  "links": [
+   {
+    "label": "Discovery record (Birmingham)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/ddcb34b0-9d75-4409-9d40-2a558a8b7187"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ }
+]

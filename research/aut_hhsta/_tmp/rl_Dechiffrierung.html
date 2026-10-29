@@ -1,0 +1,531 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="ctl00_html" xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head id="ctl00_Head1"><title>
+	scopeArchiv - Resultatliste
+</title><link href="query.css" rel="stylesheet" type="text/css" /><link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<script type="text/javascript" src="Scripts/Help_CSH.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-3.6.0.min.js"></script>
+<link rel="search" href="OpenSearch/default.aspx" type="application/opensearchdescription+xml" title="Query OpenSearch" /><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta content="website" property="og:type" /><meta content="summary" property="twitter:card" /><meta property="og:site_name" /><meta content="https://www.archivinformationssystem.at/" property="og:url" /><meta content="https://www.archivinformationssystem.at/images/page_header_left.png" property="og:image" /><link href="/WebResource.axd?d=Nhf6TpUj19KZ9rhEj2xtdZQ4CwZ_RYApgHWdn_WF7nHPPTwDRnm9GgyEBLUA-upnVWBRKlBAwRZGfA7SWBpZNQwb_2F5p9BQESYC14IQI9fFiUIs-J3ngogN4A-sOCt00&amp;t=637805455440000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=vsKpXOsoEwDUfVug9KOqSho77E9TAboTHPRfdl2JbwdbWtHnAB40UzmhufXLRdxUQYTS6gbY6pJrHYien2whzPJKk3l_cOQWaCFDUfVEvkei-pfsVwSUvRzbzEhZ-5Wi0&amp;t=637805455440000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+
+<body class="masterPageBody">
+   
+	<form method="post" action="./resultatliste.aspx" id="aspnetForm" style="width: 100%; height: 100%;">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl00_RadScriptManager1_TSM" id="ctl00_RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOWxm1amukv1tjTESuvZKjamjubPuTeTPMcP9QnTHRDWA4d5l-LKHR8L5PrhCZ_uJA2&amp;t=639191968340000000" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var localizeDelay;//]]>
+</script>
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3ade%3a15e07564-f3d5-441e-a01b-5763caea6096%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%3ade%3a77834329-9f9d-4011-8eac-a82ffa414dd7%3a16e4e7cd%3af7645509%3a22a6274a%3aed16cbdc%3a33715776%3a58366029%3a24ee1bba%3ae330518b%3a2003d0b8%3ac128760b%3a88144a7a%3a1e771326%3ac8618e41%3a1a73651d%3a333f8d94%3bAjaxControlToolkit%2c+Version%3d20.1.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3ade%3ac4eb885e-4e86-4858-819d-193000598f6e%3acd9be5ef%3ab7a47d44%3af2800037%3a2761bb61%3a10439726%3a98f9cc63%3adffb332%3adda46be5%3a78181a00%3a7b2ffb77%3a18987c52%3ac99a1521%3a891e6cc6%3a9833e5c%3af06639ea%3ad6567903" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="43B862AC" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="5xpDJ29X9YQlT97XLOILREYOvtgjufDG7bCwTCPviL5dncJ0_33Fyl0tVPtzhvUJprcRfAwMfCUWEhlCP1ur66oq9N7vmwOvTkLIQ_InYlQ1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="YbP45YkGouSorWSOudBwZZ2PHBpMF+ZDuLGO1DDLGOkZxMn+v5p0Dfl/rMgxypZCEh3lW+HJs0C8GF2jnt1na+h0reiElF0zkbbvj2/jp6LDWfO4ywvZ3TCfQlKjiHxOyZjFjTyh3uEYeMXhuPXD0HSvG1ILC3yXQDHjYTCKZ1OJO9YgnyRlCarAwOmKn0mZEUPbZUEc88Zj8zkzwf3IEcjJ1lGxzPi+FsjYZUtfkLvPsp+iA/RUf+VOpcKS1xMoAxczwDuIyl9KEgWht2Bi0U+KNYA26Y8RVprr3Z/vNcwD7cMKYYbzPWD+uWph4ZQYNED7Isk4J9XxInNB7YcF5/UcsgvtVyq7sLEHwaMq6RmVEkY4KfSKl5rp9NAor7Ozy8uW+JREGqronrHnTdu68efJHt5diSD1VjCZhhOBG8dfytTmmf7Ja44G+SYVCLQdWUX+0cX4g/QQ1P1vIng31rZ4SWLVhlzUFI+J9zrgw8/P+ctyCw1Qud+4lYjKQU/G5cnuefR8psF/T6nW0WSWMP0ydo7AAs6qbzkIj1bifIncJNuAJC20f+X7Y4xwiiAuXjFHGf/o2wufQFiRcMRm50oeU8Qyq/oaKRqyIm2I/RJR3pFOL86mpb1Vc0cZ2T6skXt2P9VLDw/bJOKaFPqPs/o2/85w1E8TiPTlP/cZ+bDGi6u+65ojFiVIvyMFUU/dg9JJy5xqjlrZktW/l+wJXRIJzBrZyevh36DzRELSMe5eqHGa082SFUL3YHRe3QruQvnPF/cRUxjC4LXKD9lIEHTCMtJjUpKyMhKNTQHfSRoFaSnQIQMTkvsfTMG1ZAaMXdoD9E80AwHJYJw7aJTPdN/jSRRB68OzNPsYnpsxY84osbgPaLUJpCDiroLzeidx" />
+</div>
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$RadScriptManager1', 'aspnetForm', ['tctl00$RadAjaxManager1SU',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+	<!-- 2020.2.617.45 --><div id="ctl00_RadAjaxManager1SU">
+	<span id="ctl00_RadAjaxManager1" style="display:none;"></span>
+</div>
+	<table class="masterPageHeader" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<img style="display: block" src="images/Oesta_Header.png" alt="" />
+			</td>
+			<td align="right">
+				<!--<img style="display: block" src="images/page_header_right.png" alt="" />-->
+			</td>
+		</tr>
+	</table>
+	<table class="masterPageContent" cellpadding="0" cellspacing="0">
+		<tr>
+			<td style="height: 100%; vertical-align: top">
+				<img src="images/quicklinkarea_header.png" alt="" />
+			</td>
+			<td style="width: 99%; height: 100%; vertical-align: top">
+				<div style="width: 100%; height: 100%" id="divMainArea">
+					
+	<script type="text/javascript">
+	    
+        // Implementing the hack when popup (iframe) did not closed when user click outside body
+	    document.body.parentElement.addEventListener('click', fn, true); 
+	    function fn() {
+	        var elPopup = document.getElementById("ctl00_cphMainArea_pnlContext");
+	        if (elPopup != null)
+	            elPopup.style.visibility = "hidden";
+	    }
+
+	    <!--
+	    function openimage(veid) {
+	        debugger;
+	        // Lade das erste Ansichtsbild der VE.
+	        var url = "bild.aspx?VEID=" + veid + "&DEID=10";
+	        window.open(url, "BildAnsicht", "width=300,height=300,left=" + (screen.width - 300) / 2 + ",top=" + (screen.height - 300) / 2 + ",dependent=yes,menubar=no,desktopToolBar=no,scrollbars=yes,resizable=yes");
+	    }
+
+	    function openReport(theURL, winName, features) {
+	        winName = '_blank';
+	        var reportWindow;
+	        reportWindow = window.open(theURL, winName, features);
+	        reportWindow.focus();
+	    }
+	    //-->
+	</script>
+	<div class="desktop">
+		<h1>
+			<span id="ctl00_cphMainArea_lblTitel">Resultatliste</span>
+		</h1>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" class="listOfResultsInfo">
+			<tr>
+				<td>
+					
+				</td>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span id="ctl00_cphMainArea_lblBilderVorhanden">Das Suchresultat enthält online verfügbare Bilder. Wechseln Sie in die <a href='/bildansicht.aspx'>Bildliste</a> um diese anzuzeigen.</span>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					&nbsp;
+				</td>
+				<td>
+					<span id="ctl00_cphMainArea_lblResultCount" class="desktopMainText">29 Datensätze gefunden</span>
+				</td>
+			</tr>
+		</table>
+		<div id="ctl00_cphMainArea_rgrdListe" class="RadGrid RadGrid_Query ResultList" style="width:100%;">
+
+<table class="rgMasterTable" id="ctl00_cphMainArea_rgrdListe_ctl00" style="width:100%;table-layout:auto;empty-cells:show;">
+	<colgroup>
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+	</colgroup>
+<thead>
+		<tr>
+			<th scope="col" class="rgHeader">
+							<span title="Alle markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl02_ctl01_chkSelectAll" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$chkSelectAll" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$chkSelectAll\&#39;,\&#39;\&#39;)&#39;, 0)" /></span>
+						</th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;vrzng_enht_titel&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl02&#39;,&#39;&#39;)">Titel/Darin</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;bgn_dt_stnd&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl03&#39;,&#39;&#39;)">Zeitraum</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;vrzng_enht_entrg_typ_nm&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl04&#39;,&#39;&#39;)">Stufe</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;sgntr_cd&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl05&#39;,&#39;&#39;)">Signatur</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;hrch_pfad&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl11&#39;,&#39;&#39;)">AP</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;bild_anst_ind&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl12&#39;,&#39;&#39;)"></a></th><th scope="col" class="rgHeader">&nbsp;</th><th scope="col" class="rgHeader rgSorted"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;rlvnz&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl13&#39;,&#39;&#39;)">Relevanz</a>&nbsp;<input type="submit" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl14" value=" " title="Absteigend sortiert" class="rgSortDesc" /></th>
+		</tr>
+	</thead><tfoot>
+		<tr class="rgPager">
+			<td colspan="9">
+					<div style="text-align: right">
+						<span style="text-align: left; float: left" class="rgWrap">
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl03_ctl01_lblPagerInfo" class="pagerInfo">Resultate 1 - 10 von 29</span>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl03_ctl01_lblSearchTime" class="searchTime">(0,12s)</span>
+						</span><span>
+							<div class="rgWrap rgNumPart">
+				<a onclick="return false;" class="rgCurrentPage" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl03$ctl01$ctl01&#39;,&#39;&#39;)"><span>1</span></a><a href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl03$ctl01$ctl03&#39;,&#39;&#39;)"><span>2</span></a><a href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl03$ctl01$ctl05&#39;,&#39;&#39;)"><span>3</span></a><a title="Nächste Seite" class="nextPage" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl03$ctl01$ctl07&#39;,&#39;&#39;)">>></a>
+			</div>
+						</span>
+					</div>
+				</td>
+		</tr>
+	</tfoot><tbody>
+	<tr class="rgRow" id="ctl00_cphMainArea_rgrdListe_ctl00__0">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl04_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl04$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl04_hylTitel" href="detail.aspx?ID=4242852" target="_self">Amtshilfe für die Polizeidirektion in Wien bei der <span class='highlightText'>Dechiffrierung</span> einer chiffrierten Notiz</a>
+							<br />
+							
+						</td><td>1892</td><td>Akt (Sammelakt, Grundzl., Konvolut, Dossier, File)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl04_lblSignatur">AT-OeStA/HHStA MdÄ IB Akten 319-905</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl04_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;4242852\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=4242852"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr><tr class="rgAltRow" id="ctl00_cphMainArea_rgrdListe_ctl00__1">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl06_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl06$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl06_hylTitel" href="detail.aspx?ID=4227164" target="_self">Erkundigungen über Marie Stadler und <span class='highlightText'>Dechiffrierung</span> einer Korrespondenz aus Belgrad für die serbische Gesandtschaft</a>
+							<br />
+							
+						</td><td>1887</td><td>Akt (Sammelakt, Grundzl., Konvolut, Dossier, File)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl06_lblSignatur">AT-OeStA/HHStA MdÄ IB Akten 240-364</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl06_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;4227164\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=4227164"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr><tr class="rgRow" id="ctl00_cphMainArea_rgrdListe_ctl00__2">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl08_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl08$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl08_hylTitel" href="detail.aspx?ID=8282032" target="_self">Äußerungen zu geplanter Veröffentlichung des ehemaligen kaiserlichen und königlichen Generalstaatshauptmannes Egon Corti zur Ententediplomatie im Weltkrieg auf Basis von Akten des Kriegsarchivs über die <span class='highlightText'>Dechiffrierung</span> von Nachrichten im Weltkrieg</a>
+							<br />
+							
+						</td><td>14.06.1921 - 16.06.1921</td><td>Akt (Sammelakt, Grundzl., Konvolut, Dossier, File)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl08_lblSignatur">AT-OeStA/HHStA SB Registratur Archivbevollmächtigter 94/1921</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl08_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;8282032\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=8282032"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr><tr class="rgAltRow" id="ctl00_cphMainArea_rgrdListe_ctl00__3">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl10_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl10$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl10_hylTitel" href="detail.aspx?ID=5215473" target="_self">Antwort an den Minister Bach über die erfolgte <span class='highlightText'>Dechiffrierung</span> des Briefes von Kossuth</a>
+							<br />
+							
+						</td><td>08.12.1853</td><td>Einzelstück (Aktenstück, Bild, Karte, Urkunde)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl10_lblSignatur">AT-OeStA/HHStA KA KK Geheimakten 9-1-19</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl10_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;5215473\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=5215473"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr><tr class="rgRow" id="ctl00_cphMainArea_rgrdListe_ctl00__4">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl12_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl12$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl12_hylTitel" href="detail.aspx?ID=4225990" target="_self"><span class='highlightText'>Dechiffrierung</span> eines Briefs für die Polizeidirektion Wien</a>
+							<br />
+							
+						</td><td>1886</td><td>Akt (Sammelakt, Grundzl., Konvolut, Dossier, File)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl12_lblSignatur">AT-OeStA/HHStA MdÄ IB Akten 228-1270</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl12_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;4225990\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=4225990"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr><tr class="rgAltRow" id="ctl00_cphMainArea_rgrdListe_ctl00__5">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl14_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl14$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl14_hylTitel" href="detail.aspx?ID=7096841" target="_self"><span class='highlightText'>Dechiffrierung</span> des Briefes von Armand Joseph Fürst von Béthune an Ewald Friedrich von Herzberg: eine in diesem Moment nicht durchführbare Gegenrevolution würde nur den Ruin Frankreichs herbeiführen und Preußen daran hindern, sich lange gegen das Haus Österreichs zu stellen</a>
+							<br />
+							
+						</td><td>06.05.1791</td><td>Einzelstück (Aktenstück, Bild, Karte, Urkunde)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl14_lblSignatur">AT-OeStA/HHStA StAbt Frankreich Varia 45-20</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl14_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;7096841\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=7096841"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr><tr class="rgRow" id="ctl00_cphMainArea_rgrdListe_ctl00__6">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl16_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl16$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl16_hylTitel" href="detail.aspx?ID=5740638" target="_self">Wien, Französische Besetzung, geheime <span class='highlightText'>Dechiffrierung</span> französischer Aktenstücke</a>
+							<br />
+							
+						</td><td>1809</td><td>Akt (Sammelakt, Grundzl., Konvolut, Dossier, File)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl16_lblSignatur">AT-OeStA/AVA Inneres PHSt 569.1809</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl16_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;5740638\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=5740638"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr><tr class="rgAltRow" id="ctl00_cphMainArea_rgrdListe_ctl00__7">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl18_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl18$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl18_hylTitel" href="detail.aspx?ID=5215472" target="_self">Schreiben des Ministers Bach mit dem Ersuchen um <span class='highlightText'>Dechiffrierung</span> eines Briefes Kossuths an seinen Agenten in Wien</a>
+							<br />
+							
+						</td><td>03.12.1851</td><td>Einzelstück (Aktenstück, Bild, Karte, Urkunde)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl18_lblSignatur">AT-OeStA/HHStA KA KK Geheimakten 9-1-18</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl18_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;5215472\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=5215472"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr><tr class="rgRow" id="ctl00_cphMainArea_rgrdListe_ctl00__8">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl20_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl20$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl20_hylTitel" href="detail.aspx?ID=4301435" target="_self"><span class='highlightText'>Dechiffrierung</span> eines Briefes aus dem Nachlass des durch Suizid geendeten Rechnungsoffiziers Karl Nowak</a>
+							<br />
+							
+						</td><td>1905</td><td>Akt (Sammelakt, Grundzl., Konvolut, Dossier, File)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl20_lblSignatur">AT-OeStA/HHStA MdÄ IB Akten 479/480-3024</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl20_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;4301435\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=4301435"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr><tr class="rgAltRow" id="ctl00_cphMainArea_rgrdListe_ctl00__9">
+		<td>
+							<span title="Markieren"><input id="ctl00_cphMainArea_rgrdListe_ctl00_ctl22_chkSelected" type="checkbox" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl22$chkSelected" /></span>
+						</td><td>
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl22_hylTitel" href="detail.aspx?ID=4300263" target="_self"><span class='highlightText'>Dechiffrierung</span> von sechs Zetteln mit Geheimschrift durch das Chiffredepartment</a>
+							<br />
+							
+						</td><td>1903</td><td>Akt (Sammelakt, Grundzl., Konvolut, Dossier, File)</td><td>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl22_lblSignatur">AT-OeStA/HHStA MdÄ IB Akten 457-1369</span>
+						</td><td>
+							
+							<a id="ctl00_cphMainArea_rgrdListe_ctl00_ctl22_hylLokalisieren" title="Lokalisiert die VE im Archivplan" onmouseover="localizeDelay=setTimeout(&#39;$find(\&#39;4300263\&#39;).showPopup();&#39;, 500);" onmouseout="clearTimeout(localizeDelay);" href="archivplansuche.aspx?ID=4300263"><img title="Lokalisiert die VE im Archivplan" src="images/ico_lokalisieren_g.png" alt="Lokalisiert die VE im Archivplan" /></a>
+						</td><td></td><td>
+				            
+				        </td><td class="rgSorted">37</td>
+	</tr>
+	</tbody>
+
+</table><div id="ctl00_cphMainArea_rgrdListe_SharedCalendarContainer" style="display:none;">
+
+</div><input id="ctl00_cphMainArea_rgrdListe_ClientState" name="ctl00_cphMainArea_rgrdListe_ClientState" type="hidden" />	</div>
+
+		<div id="ctl00_cphMainArea_pnlContext" style="height:180px;width:670px;display: none;
+			z-index: 100">
+	
+		
+</div>
+		<br />
+		<table id="ctl00_cphMainArea_tblSuchkriterien">
+	<tr>
+		<td class="desktopMainText" valign="top" colspan="2" style="font-weight:bold;">Suchkriterien</td>
+	</tr><tr>
+		<td class="desktopMainText" valign="top" style="width:150px;">Mit allen Wörtern</td><td class="desktopMainText" valign="top">Dechiffrierung</td>
+	</tr>
+</table>
+	</div>
+
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div id="divLogin" class="masterPageLogin">
+		<table id="ctl00_lacLoginArea_tblLoginArea">
+	<tr align="left">
+		<td id="ctl00_lacLoginArea_tcHome" class="loginArea" style="white-space:nowrap;"><a id="ctl00_lacLoginArea_lbtHome" class="loginArea" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lacLoginArea$lbtHome&quot;, &quot;&quot;, false, &quot;&quot;, &quot;default.aspx&quot;, false, true))">Startseite</a></td><td id="ctl00_lacLoginArea_tcHomeSep" class="loginArea" style="white-space:nowrap;"><span id="ctl00_lacLoginArea_lblHome" class="loginArea">|</span></td><td id="ctl00_lacLoginArea_tcBestellkorbImg" class="loginArea" style="white-space:nowrap;padding-right: 0px"></td><td id="ctl00_lacLoginArea_tcBestellkorbText" class="loginArea" style="white-space:nowrap;padding-left: 0px"></td><td id="ctl00_lacLoginArea_tcAnmeldeinfo" class="loginArea" style="white-space:nowrap;"><a id="ctl00_lacLoginArea_lbtAnmeldeinfo" class="loginArea" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lacLoginArea$lbtAnmeldeinfo&quot;, &quot;&quot;, false, &quot;&quot;, &quot;anmelden.aspx&quot;, false, true))">Anmelden</a></td><td id="ctl00_lacLoginArea_tcAbmeldenSep" class="loginArea" style="white-space:nowrap;"><span id="ctl00_lacLoginArea_lblAbmeldenSep" class="loginArea">|</span></td><td id="ctl00_lacLoginArea_tcSprache" class="loginArea" style="white-space:nowrap;"><a class="loginAreaSelected" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl00&#39;,&#39;&#39;)">de</a> <a class="loginArea" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl01&#39;,&#39;&#39;)">en</a> <a class="loginArea" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl02&#39;,&#39;&#39;)">fr</a> <a class="loginArea" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl03&#39;,&#39;&#39;)">it</a> <a class="loginArea" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl04&#39;,&#39;&#39;)">nl</a></td>
+	</tr>
+</table>
+
+	</div>
+	<div id="divMasterPageTitle" class="masterPageTitle">
+		<span id="ctl00_lblMasterPageTitel"></span>
+	</div>
+	<div id="divMenu" class="masterPageMenu">
+		<div tabindex="1" id="ctl00_radMenu" class="RadMenu RadMenu_Query">
+	<ul class="rmRootGroup rmHorizontal">
+		<li class="rmItem rmFirst"><a accesskey="1" class="rmLink rmRootLink" href="suchinfo.aspx"><span class="rmText">Suche</span></a><div class="rmSlide">
+			<ul class="rmVertical rmGroup rmLevel1">
+				<li class="rmItem rmFirst"><a class="rmLink" href="volltextsuche.aspx"><span class="rmText">Volltextsuche</span></a></li><li class="rmItem "><a class="rmLink" href="feldsuche.aspx"><span class="rmText">Feldsuche</span></a></li><li class="rmItem rmLast"><a class="rmLink" href="archivplansuche.aspx"><span class="rmText">Archivplansuche</span></a></li>
+			</ul>
+		</div></li><li class="rmItem "><a class="rmLink rmRootLink" href="#"><span class="rmText">Letztes Suchresultat</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="arbeitsmappen.aspx"><span class="rmText">Arbeitsmappen</span></a></li><li class="rmItem rmLast"><a class="rmLink rmRootLink" href="#"><span class="rmText">Info Corner</span></a><div class="rmSlide">
+			<ul class="rmVertical rmGroup rmLevel1">
+				<li class="rmItem rmFirst rmLast"><a class="rmLink" href="kontakt.aspx"><span class="rmText">Kontakt</span></a></li>
+			</ul>
+		</div></li>
+	</ul><input id="ctl00_radMenu_ClientState" name="ctl00_radMenu_ClientState" type="hidden" />
+</div>
+	</div>
+	<div id="divQuickLinkArea" class="masterPageQuickLinkArea">
+		
+	
+<div class="quickLink">
+	<div class="quickLinkHeader">
+	</div>
+	
+	<dl>
+		<dt class="quickLinkItem"><input type="image" name="ctl00$cphQuicklinkArea$apActionPanel$_ap_imgWechselnZuListe" id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgWechselnZuListe" disabled="disabled" class="aspNetDisabled" src="images/ico_listenansicht.png" alt="In die Liste wechseln" /></dt><dd class="quickLinkItem"><span id="ctl00_cphQuicklinkArea_apActionPanel__ap_lblWechselnZuListe">In die Liste wechseln</span></dd><dt class="quickLinkItem"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgWechselnZuBildliste" href="bildansicht.aspx"><img src="images/ico_bildansicht.png" alt="In die Bildliste wechseln" /></a></dt><dd class="quickLinkItem"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkWechselnZuBildliste" href="bildansicht.aspx">In die Bildliste wechseln</a></dd><dt class="quickLinkItem"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgWechselnZuBilduebersicht" href="portfolio.aspx"><img src="images/ico_spaltenansicht.png" alt="In die Bildübersicht wechseln" /></a></dt><dd class="quickLinkItem"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkWechselnZuBilduebersicht" href="portfolio.aspx">In die Bildübersicht wechseln</a></dd><dt class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgSucheInnerhalbResultatliste" href="feldsuche.aspx?Narrow=1"><img src="images/ico_suche_innerhalb_der_resultate.png" alt="Suche innerhalb der Resultate" /></a></dt><dd class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkSucheInnerhalbResultatliste" href="feldsuche.aspx?Narrow=1">Suche innerhalb der Resultate</a></dd><dt class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgPdfErzeugen" href="JavaScript:openReport(&#39;report.aspx?rpt=0&#39;,&#39;Print&#39;,&#39;scrollbars=yes,width=640,height=640,resizable=yes&#39;);"><img src="images/ico_pdf.png" alt="Als PDF anzeigen" /></a></dt><dd class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkPdfErzeugen" href="JavaScript:openReport(&#39;report.aspx?rpt=0&#39;,&#39;Print&#39;,&#39;scrollbars=yes,width=640,height=640,resizable=yes&#39;);">Als PDF anzeigen</a></dd><dt class="quickLinkItemBeginGroup"><input type="image" name="ctl00$cphQuicklinkArea$apActionPanel$_ap_imgInArbeitsmappeLegen" id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgInArbeitsmappeLegen" src="images/ico_in_arbeitsmappe.png" alt="Markierte in Arbeitsmappe legen" onclick="alert(&#39;Sie müssen sich anmelden um diese Funktion nutzen zu können.&#39;); return false;" /></dt><dd class="quickLinkItemBeginGroup"><a onclick="alert(&#39;Sie müssen sich anmelden um diese Funktion nutzen zu können.&#39;); return false;" id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkInArbeitsmappeLegen" href="javascript:__doPostBack(&#39;ctl00$cphQuicklinkArea$apActionPanel$_ap_lnkInArbeitsmappeLegen&#39;,&#39;&#39;)">Markierte in Arbeitsmappe legen</a></dd><dt class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgHilfe" href="JavaScript:ShowHelp(&#39;de&#39;,%20&#39;ResultatslistePage.htm&#39;)"><img src="images/ico_hilfe.png" alt="Hilfe" /></a></dt><dd class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkHilfe" href="JavaScript:ShowHelp(&#39;de&#39;,%20&#39;ResultatslistePage.htm&#39;)">Hilfe</a></dd>
+	</dl>
+	<div class="quickLinkFooter">
+	</div>
+</div>
+
+	<br />
+	
+<div class="legend">
+	<div class="legendHeader">
+		<span id="ctl00_cphQuicklinkArea_leLegende_lblLegende">Legende</span>
+	</div>
+	<dl>
+		<dt><img alt="" src="images/ico_lokalisieren_g.png" /></dt><dd><span>Lokalisieren im Archivplan</span></dd><dt><img alt="" src="images/ico_bild_anzeigen_g.png" /></dt><dd><span>Bild vorhanden, klicken zum Anzeigen</span></dd>
+	</dl>
+	<div class="legendFooter">
+	</div>
+</div>
+
+	
+
+<div id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_pnlPopup" class="modalPopup" style="display: none">
+	
+	<div id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_pnlCaption" class="modalPopupCaption">
+		
+		<span id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblPopupTitel">In Arbeitsmappe legen</span>
+	
+	</div>
+	<br />
+	<table>
+		<tr>
+			<td>
+				<label for="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_cboArbeitsmappe" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblArbeitsmappe">Arbeitsmappe:</label>
+			</td>
+			<td>
+				<select name="ctl00$cphQuicklinkArea$zuArbeitsmappeHinzufuegen$cboArbeitsmappe" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_cboArbeitsmappe" onchange="if (this.selectedIndex != 0){document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblBezeichnung&#39;).disabled=&#39;disabled&#39;;document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung&#39;).disabled=&#39;disabled&#39;;document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung&#39;).value=&#39;&#39;;}else{document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblBezeichnung&#39;).disabled=&#39;&#39;;document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung&#39;).disabled=&#39;&#39;;}" style="width:226px;">
+		<option selected="selected" value="">&lt;neue Arbeitsmappe&gt;</option>
+
+	</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblBezeichnung">Bezeichnung:</label>
+			</td>
+			<td>
+				<input name="ctl00$cphQuicklinkArea$zuArbeitsmappeHinzufuegen$txtBezeichnung" type="text" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung" style="width:220px;" />
+			</td>
+		</tr>
+	</table>
+	<br />
+	<div style="text-align: right; white-space: nowrap">
+		<input type="submit" name="ctl00$cphQuicklinkArea$zuArbeitsmappeHinzufuegen$cmdPopupOk" value="OK" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_cmdPopupOk" />
+		<input type="submit" name="ctl00$cphQuicklinkArea$zuArbeitsmappeHinzufuegen$cmdPopupAbbrechen" value="Abbrechen" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_cmdPopupAbbrechen" /></div>
+
+</div>
+
+
+
+	</div>
+	<div id="divLogo" class="masterPageLogo">
+		<a id="ctl00_hylLogo" title="Startseite" href="default.aspx"><img title="Startseite" src="images/logo.png" alt="Startseite" /></a>
+	</div>
+	
+
+<div class="cookieBannerOuter hidden">
+	<div class="cookieBannerInner">
+		<span>This site uses cookies to offer you a safer browsing experience and personalize content.</span>
+		<div class="cookieBannerButtonsArea">
+			<a class="cookieMoreInfoButton" href="PrivacyPolicy.aspx" target="_blank">More</a>
+			<a class="cookieConfirmationButton" onClick="return acceptCookiePolicy()" href="#">Accept</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+		var cookieName = "scopeQuery-gdprAccepted";
+
+		function acceptCookiePolicy() {
+			document.cookie = cookieName + "=1; path=/";
+			var panel = $(".cookieBannerOuter");
+			panel.addClass("hidden");
+			return false;
+		}
+
+		function updateCookieBannerVisibility() {
+			var rx = new RegExp("(?:^|;)\\s*" + cookieName + "\\s*=", 'm');
+			var accepted = document.cookie.search(rx) >= 0;
+
+			var panel = $(".cookieBannerOuter");
+			if (accepted)
+				panel.addClass("hidden");
+			else
+				panel.removeClass("hidden");
+		}
+
+		$(function () {
+			updateCookieBannerVisibility();
+		});
+
+	</script>
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl00_RadScriptManager1_TSM');Sys.Extended.UI.Localization.SetLocale("de");Sys.Extended.UI.Localization.SetLocale("de");Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ctl00$RadAjaxManager1","updatePanelsRenderMode":0}, null, null, $get("ctl00_RadAjaxManager1"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"4242852","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"4242852","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl04_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"4227164","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"4227164","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl06_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"8282032","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"8282032","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl08_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"5215473","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"5215473","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl10_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"4225990","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"4225990","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl12_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"7096841","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"7096841","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl14_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"5740638","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"5740638","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl16_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"5215472","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"5215472","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl18_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"4301435","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"4301435","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl20_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.PopupControlBehavior, {"dynamicContextKey":"4300263","dynamicControlID":"ctl00_cphMainArea_pnlContext","dynamicServiceMethod":"GetDynamicContent","dynamicServicePath":"/resultatliste.aspx","id":"4300263","offsetX":-693,"popupControlID":"ctl00_cphMainArea_pnlContext","position":4}, null, null, $get("ctl00_cphMainArea_rgrdListe_ctl00_ctl22_hylLokalisieren"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_cphMainArea_rgrdListe","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"ShouldCreateRows":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0},"Scrolling":{},"Resizing":{},"ClientMessages":{},"KeyboardNavigationSettings":{"AllowActiveRowCycle":false,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37,"MoveDownKey":40,"MoveUpKey":38,"SaveChangesKey":85,"CancelChangesKey":81},"Animation":{},"Virtualization":{}},"Skin":"Query","SortingSettings":{"SortToolTip":"Sortieren","SortedAscToolTip":"Aufsteigend sortiert","SortedDescToolTip":"Absteigend sortiert","SortedBackColor":{"R":0,"G":0,"B":0,"A":0,"IsKnownColor":false,"IsEmpty":true,"IsNamedColor":false,"IsSystemColor":false,"Name":"0"},"EnableSkinSortStyles":true,"ViewState":{}},"UniqueID":"ctl00$cphMainArea$rgrdListe","_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_defaultDateTimeFormat":"dd.MM.yyyy HH:mm:ss","_editIndexes":"[]","_embeddedSkin":false,"_freezeText":"Freeze","_gridTableViewsData":"[{\"ClientID\":\"ctl00_cphMainArea_rgrdListe_ctl00\",\"UniqueID\":\"ctl00$cphMainArea$rgrdListe$ctl00\",\"PageSize\":10,\"PageCount\":3,\"EditMode\":\"EditForms\",\"AllowPaging\":true,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":false,\"AllowNaturalSort\":false,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"CheckListWebServicePath\":\"\",\"GroupLoadMode\":\"Server\",\"PagerAlwaysVisible\":true,\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"hasDetailItemTemplate\":false,\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_columnsData\":[{\"UniqueName\":\"Markiert\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"TitelDarin\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"vrzng_enht_titel\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"Zeitraum\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"SortExpression\":\"bgn_dt_stnd\",\"DataTypeName\":\"System.String\",\"DataField\":\"zt_raum_txt\",\"Display\":true},{\"UniqueName\":\"Stufe\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"SortExpression\":\"vrzng_enht_entrg_typ_nm\",\"DataTypeName\":\"System.String\",\"DataField\":\"vrzng_enht_entrg_typ_nm\",\"Display\":true},{\"UniqueName\":\"Signatur\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"sgntr_cd\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"HierarchiePfad\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"hrch_pfad\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"BildLink\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridHyperLinkColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"bild_anst_ind\",\"DataTypeName\":\"System.String\",\"DataTextField\":\"\",\"DataTextFormatString\":\"\",\"DataNavigateUrlFields\":[],\"DataNavigateUrlFormatString\":\"\",\"Display\":true},{\"UniqueName\":\"TemplateColumn\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"Relevanz\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"SortExpression\":\"rlvnz\",\"DataTypeName\":\"System.Decimal\",\"DataField\":\"rlvnz\",\"Display\":true}]}]","_masterClientID":"ctl00_cphMainArea_rgrdListe_ctl00","_shouldFocusOnPage":false,"_unfreezeText":"Unfreeze","allowMultiRowSelection":false,"clientStateFieldID":"ctl00_cphMainArea_rgrdListe_ClientState","expandItems":{},"renderMode":1}, null, null, $get("ctl00_cphMainArea_rgrdListe"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_postBackReference":"__doPostBack(\u0027ctl00$radMenu\u0027,\u0027arguments\u0027)","_skin":"Query","clientStateFieldID":"ctl00_radMenu_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"items":[{"value":"Suche.Volltextsuche","navigateUrl":"~/volltextsuche.aspx"},{"value":"Suche.Feldsuche","navigateUrl":"~/feldsuche.aspx"},{"value":"Suche.Archivplansuche","navigateUrl":"~/archivplansuche.aspx"}],"value":"Suche","navigateUrl":"~/suchinfo.aspx"},{"value":"LetztesSuchresultat"},{"value":"Arbeitsmappen","navigateUrl":"~/arbeitsmappen.aspx"},{"items":[{"value":"InfoCorner.Kontakt","navigateUrl":"~/kontakt.aspx"}],"value":"InfoCorner"}]}, null, null, $get("ctl00_radMenu"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

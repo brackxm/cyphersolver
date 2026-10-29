@@ -1,0 +1,350 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="ctl00_html" xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head id="ctl00_Head1"><title>
+	scopeArchiv - Resultatliste
+</title><link href="query.css" rel="stylesheet" type="text/css" /><link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<script type="text/javascript" src="Scripts/Help_CSH.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-3.6.0.min.js"></script>
+<link rel="search" href="OpenSearch/default.aspx" type="application/opensearchdescription+xml" title="Query OpenSearch" /><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta content="website" property="og:type" /><meta content="summary" property="twitter:card" /><meta property="og:site_name" /><meta content="https://www.archivinformationssystem.at/" property="og:url" /><meta content="https://www.archivinformationssystem.at/images/page_header_left.png" property="og:image" /><link href="/WebResource.axd?d=Nhf6TpUj19KZ9rhEj2xtdZQ4CwZ_RYApgHWdn_WF7nHPPTwDRnm9GgyEBLUA-upnVWBRKlBAwRZGfA7SWBpZNQwb_2F5p9BQESYC14IQI9fFiUIs-J3ngogN4A-sOCt00&amp;t=637805455440000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=vsKpXOsoEwDUfVug9KOqSho77E9TAboTHPRfdl2JbwdbWtHnAB40UzmhufXLRdxUQYTS6gbY6pJrHYien2whzPJKk3l_cOQWaCFDUfVEvkei-pfsVwSUvRzbzEhZ-5Wi0&amp;t=637805455440000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+
+<body class="masterPageBody">
+   
+	<form method="post" action="./resultatliste.aspx" id="aspnetForm" style="width: 100%; height: 100%;">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl00_RadScriptManager1_TSM" id="ctl00_RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="119IyIwp6wJzL0ozEDWNbhJv4m8fVxn4YRhEoGFYi16uq0YmAFT1duFRQDT84aUuT3e7o6ZBCZ+0Ro9DCgJl8yCxyBXlHqwgKmgXBgt2SnSvP4Iddwl68mzmf31c7F73Mmz3AGlia5yFNR6OgKrJ+Ql6iZTjcNICZa3c2nSH9OdDCHnKjEKJ8dn9VNmzK7OQg4+VL4AwZixezT3qsPR2mjsspcHJfc5UuXyjsYVVB3u68YNgd4RbwI+xMnz/Zm9bz+Z/C2MxvGtc6lrTqF5ACf2CRu7Wd6kNTNIFZuRF5nTu8zwhHmEgDzEOaqpNU+9+jfbnr3xakbSz7tePg6J++7TSoRTnzNzaqXCNW1OTs8FgOSMSiHllQ/msM2qpcNRcnaEG/Cb9wkLaVHPEasNrFvyg1UK7sEgaBrYMLPSUyN8vaKiCUSsPCRyalSzvkaQcDcqX8eXRe8NOjZwVHZN/7M6i8KL5ff1KfT01R0GQ+3Fly11f2y1YABWNNF3J74X3JyNW9shYDFs/VO046k1FeQtWlgG1/XBGonGb5RNB9BLUuPNuO9o+gIcyRF6AdyQYC8BlTlTtSc4n6wrTrt9Upcb5sJp1CyNXuMcO9rgtabdV153GyEnQPcVsJEuazmVWQXQ64+YhCyJhEe7lkyk195POUAIyUtEPFgOBiA/ngHmt3p3RB2zeLVso/wEEgS0eUE9CAkUNimpe4lMao52JyZawRM5lkzvxytGWj1jTMX5LFVA0ODnGi8YrV3yjcbHI3sjzlUGh8dAbnrVznKic7Fiul7TpD07qCJz5cDyL6NnEnkQ6SxcPdrZCcdwGOAHiI6Pol2jtqcSp6ZpemcwXN+dlTjF+Fa3sq1cHaTZM40vQqODhtOMY5AhXYb1sjAxrs1TuqhEXhrK7DkpygQYjRF2bKT9b97kBL0HER7fPqnvYMnMrj4wSjjk8i4UXME5OcbPwNxSqg3dQNNdaKAAi5uumuQd1kknJYszOgLV9Hr2F9Y+zEqrsTqjL/xiT0USZTyCZrkyHbfwJHGkhNp/8t9ruOzKZyhcrLnX0XJ4gAp+JvOsZuRh8jMFNclZ+Ow9/lQZe6koTPvmRIxgsu31tSRGoOkguQCsYG6h7ief1C1AiPKwFzkV7xse2kXo5IqcEWiQDXOOrkvNPhzw8NwI4c1wUDXFzHJBGKssESMzO6/WBHrWsbsVGwz72+ojmWimR9ohIUNa1pGqkckqmXWePl3vhw9uBSW2fGaWgQfAiC4xcYGdQ5Xv6QL/5Wk7yIAHwGDz15K+wttcGxhnkhHo7YSoH0h4sEs1FPDeW4CnmZuLkA/nRkTPcmWEdVJQZdIujYQfRjQWtL4q1hRAHIlwPLMBv5e5IwxMEDX79/q7ZP3VdsI1GMWTbejszRJdnJ6XPunFrebsxWjzAZnhIyBfG7QH5ZRzH0vGrdirtWn6bGhkzsukrjhkZfOksJ9nlHYSv9czBBHmTDGYPRc0vFlY8kEKgM/Cp3Oe/PCHQZAvSPA0Sg9EUFXCkY3e10WrVO0c3MfeksS9B368mgugGO2pZxNWKFP76wugOreqK7m/PL445qOojC+a7aABSZN2ihXZPMo0kxAr6BIuN9yISMNYHKjjB3MQiLxj4I6SmmrH62U0Bqizylr980b1f2nGACdspmu/Rz2c9BUV67b7EzYGBCsZGbi9u/BxteRGgQsFlzXqOR+UErJOb5PUyA4AbShvr52U5Ao4cWvc/C67tANWGc2kDjmtyWdZz+zG9tS2u9OAJKSMakA+uTSCgHvJgxy+ZdXqUwJjcoZFHP0ZaRbwWvcmXtP7r1tm5y6EkZWUHGDBPRNXoWfJK3OZ0Vt+KocM9XJLVRSyh33FKX+mmkJCtrW5ehdyNUga5+WazsXv+oqmHE9l9938xFxmcOYAHF2rHuwq4kr1G6eq9yEZvWtxvnnnFz/Sj87Biq3hJRR6frUWMInljQGdI1ojXEVlxgAnuPyHSgBaYVCUe3UImWHNsM82xexRX5vLqTupxf8LnrZscFvocjxcAaCxn/NMO5vSD+djZC3pbnCPGB1n9El/eNdXNRpUgwvj4kBp6x8dRsumHtNQFP/Fnq1f7dV/U7lQEiJeJFxj0kDq+wnvObgf5n30h60EUdcCqDOiJfGymfJywJ+/bh1SRUNpeI2WNTtpniiMuCOm3CQ43uV89H4P2/Z+7Q6wzVuTUPDx7ciPZJ/cCfxy8XQdeC29wEH4as2szhM3IzaKILXbCfuw3eS5xWryJk6gW5OOLTkFRhRgr73nT0RdA4PKUXhrwOi2kMcjmBElzCPQD4Fmn7ht8OLbOtlkF2DlrqDFpdOzmKgaYLVZ3ZBdQC2nu/MaHejfCipYXE4OHI60bfd555TUIQLeIaWyjKCJUuus7Dze8J2ACZffTUuaojn9f8PlKRrlgMofQUvzLXbMNeWbtaP0diRaeGZbIJNGjUDst8JqpFt1KklWYl4Dh4xuHGPbPVY64XeoxNIC3f/LTmX2h+nSTp39tcAxuvhaZGe7W8E61DNqxQ9B7AIShMJNy+bI86r6N8mQ7GWVzauKma76hCWS3RDjAO33zB9LiPtZQ6R8rL/8iZaDeYaUXRFhhgJ/tnFNGfQJK1b2SxH1VEv45n9a3DMU0TbaRBOO8Ngvet7yfJy6VLkYCpsRExP/XHznz65oI95mc0rVEw5PfB3PhqhSOqEjVeO6CA10NX8bD00hoOS5ekD00T3P5XrI+l70m+B32FRQlgoL+Xt9YVekuFBAeRBEFreshZfuzwPnW+3gRNdnJTC1nhUNRZE2gfiP5FfV+ylKe4B+SEjeCLNudUEqTlWa4Lou53v1qLqRJ5CPIjZVVKQkSMLniekK+3hDfC09/IjG6fJuaoefVImp0OoJk9T5ORHopA6pd9xcCgB54bWazh1TMuT6ejjF9UGSTfKQRKnA9NAJhegWGXJkgD3f9aqkGsqkl/JPYkqteRcUWpmVcX84JNesFu6vf0k5lRxYD6ph46qhV1zr+7w/zyRr0YFiQc2zRh+lL5mcuGAlWWiR/2dvs2FuemnCt64efJ7BP1pOb0sXZIgERPoBGOYk5qiDprsXHfg8YGwLMY6o1X5jEWToqyUP9vilux+PJ2xIc1Rs50Y0GEZHGBBMFLruTVkcZTmoxxAI2gErwOdePMqu64SR7o10lLiOhPQzLSG+CM0fMvHXUpFWoh98gZpKdFkqOjIQfdSo6xZzZsv+crPdMTes6ctPHQd6sURl3lBx96SGDaedcFrwKa+9eskw3LU62eNcFFAiEzDytwGhu9a5CaaKPjq5NMDVgFwTa28pQkfuKsG6Tr3jOeZtaT4artqVjWqQTLU8j35A6qNIFBH0svoc7nQxBRn/GVzRrPN/9HEFfRGdh+SR7wUzAgO5lp9ctZvTwCBs2lKxlV7Nt77yvw8kkZijNn8Ti/k6qXNptAoeVOmNq+rKEPpEC84cz9bJfDEF19mWia9M2IvudKfQRHBUQjiMSEkN3eTDbb2N+YSdj+kR86ofODAFdY8TOz/wC3rhvXceQTXOm8yKPSh4VObt7zHc1WwBHbJGhHoGD0OKkSbc1B7MLBnFz6ieoHnqBeEmnYDrXSnUfS+x+hiy6vllGX2nk4eVksEZIzvBSk5k6AqIjuTiwvN41A2mfl5SAdWRjFnO68MBiBXRtWlO22rtbPA8cpVuTgNpZunTHJkc8o95NmaSWxmthGgFLieVE45y0OPavv2cM7qNA4k2ExWC/1x1r5aVy2hjDaDBO5pGohFq61BCbGrhFUADDVcnZgmWBVq/OACgmLMYnJx2W37x2j7SQc3xk1yN00QwKCaRrVpBTDtfRDakqxiKaY7x9LNZZmHmTZRc/JMQTs1eDuYG25TSlZiD/mRIklyvCAE+6N0wiXONQj7q3raLYTLJd4VOwQGpe6uyqp2BgrbLS0CSoKiZ1JsVHiR3wzGOXQigvf0RHY6Pb2RO9UnWZNnJ7cJWnjJS+I9BMOl9/TOYYWcr7jtOYu+1YrspGYfmLMRZ+68GIKjrXpc4JQ62An+uLc8Dx9ueIIW1P7PYv8BENUqfd/0ktRRXrKSQziUItqb0D1pVEtFx45WGMkugfSbcVWsOzi/oK3KM8Xd4UgexEG+2026GpM2INMNqzbV7g1oxyDcSHGLNPvBdSYwb6Q7AyoNqkA8hjeQa2dLgNtvRhV/HvbDhUw20rb3vEJdF3hwbftUl+Cl94x9YvCER6HMvQAu1KIgQJduSvHOQw2Ta0HErH7R7nmk/W3GaMtPZRrpNI8/FdkTNz4bg16HhUDmv8owSJlT07yTOFwuiuR3CiJukjP84e+/N/4Lt6e+VtajLsQJDPXDpyA94SaiV5hhvtnXLPidyT/kpQXVqt7Soqo7eAAru9YCR0MuCStQBdJSTZYLXFmJZyGLmMOiJHXVPnwUr/QCLZj0bZafKDlSPfpTCqYCpe2B7z6W5l8lW1aSRxnv89N7g9pNh3qJrvE55ewTaJUhZm3LTTPyfRPg9jKxwR5wfSO1eZRrNm6nmcMLs6fMk6MNWROHpOPigir/Qusu69nu/p+Bk/a+IQgf/50ZcAph12Y9fA9+/Sy1CMqowx1mc+bgHI0RVFkKsUvxfJ9tTHPNLX0fGitLmmK2p+nyp4FIaVGMtAtcqULDSCzAywfdctJAZxwnts1iQwxHSav3ODBA9yV2atIHqk++4ovlfA31G9h9kwTd4NYK87s8kNZ5F3TxnQOE5bD2q9bxB5Ma9BctIZaJTfDdGL+gWGAriYhgoB9pRoWmEuMsgVluDRvIltOuzL57mycmMbSgWEwljoAFm1DH7HYOFBy+uBGOr6mFUPjQBvAM7SeiLL+woPEncrvw7QJlgAdqAHGwKrv5ypHR9SHQ2KQ3nTWacmAKjzQjH5KHJjqHW6eXhqwoib/MYjYZP47zxDl2CjItGoLoc/T4+WS17/FD6gOnNbyJAXlaB3LnDijO6wR7DxxgI6OoX5IctfZCpUH2QLerG3B/kBj2KCx8Oirmi4cvmH6rvZtuYyp4LaGmhhCIPzbpTtAAjYyndhHmweoO9Jrb65UUtglf5zallC8BiE2Jgupx4GLut6GlnkyQnchgWeELNrYn+CAVlspY8rvHO5Dy2kmxFL9Xdrlz8JRL5oAKzEijBWFOqPV+NBoNZh+fzLwbJPy6J7fIi4v86P1JFRHVkm3xaNRCV75xo4i0Wx5UWVU2RQC2cYb+qpwXvJMRfcfqmsmasWSwXtaV7ndMGf5Js+NXP5KBokGwYCw0NA5rsDRh5go+kftb8FInno5t+BNuAxE6FTvvXnNMgjI1JE1plEuwBcpl1/nvj/pEiNu6GmrG5ixg31Cy8XnrKCUcwfgHZIHym/Jcd+txNXnyBgzKLIP8sysCxOdoh5N+3cizebfHRA0LPuLezzFXHQrILi4mgWC4N2G5NgZBGUEvn/sUQulR5HICpM+jijbDrzZ95LdbCeLOs0kMEiNxGyLcv3ojZrqpglw3gpMRMqJex7HQUOTlFXcj4cA4jsvBiDP/Ubbv8U2UYabq/GZ+xyxwgSMAYI8+g6wQuhpqrqkcEptJ0ms0UZm0tYIQ6hC1WiBLAwUfo3Pmv1oiyumrxoKuTqP70Jq0Cf9UlNRCrSDkgsvRnBK/1EChNm9sJLTvtoQevk+xMZK+odLiNDv8EQx9wvCTg/Cm+sL2/uM4kZkk5uxFHB3SzkHgMWYKyo3viX2CMSVq8pqQbExCZUrRDJgQTud1EdGhRUiDXDrGev2EpDBmj5iH78rAXmxKy4W+hWDoTh0MZ+BIUi2+pCa7BeS0LVLcrRuFpjU50c8KMy1OQe9yX8GcOxwdAKcEb22sU1POE6+dtqrE1kfvZieWd1ZPAkkFLPsNdqu8Vey55BjuzGcQTmgCo1A7dP5ymngn0RgY3W/kpjao+d8d7yOzZq2wsEsd95fHzK3VgyGMOskwf3b1kpAP6TI0UVWu2iMuSkhG+sNDpVCKHDBdw6E9EIhW5rMmyXzafMElNpiSRFK44q5GfaDVwzgbqx+w5F2WgiEL/RESCFo749pZEibtY1mUfC7F0OunymEqqANDukE+WtD/MNKDF+DK30kKISysd50x9Bu698jxKcEjht+3oACQsd+HPsUGxm6v54JFktM78s7W2QZT+ts/DzCEYFe6rdt+Z9IFtFx39bavJH2jiHNHey5AL6knEAnslia1rn13Abag/SXAIrYx9H7037orTXBLbaIKnDNJRcovDEoFFLCpV3kFJCx8z9ohEHvl1J521phM9SGIx23NCiLOPV7MmR9qS7B0CFjOgYESBhYUQw1dohjfEsHJbB3YCW6MSiMXV3ODRHbScnrMEmMG8bMFmQeX4ILarI4iRvM8nHOSUrqDweHnMoynPEVEiFfDMdUovms3WCIGX7WT7lOijonPC67upE7OReMfVS/txfrgfJqyUB0yHiJjMZJOlHfK2dilhx2zyWg/OkYMD5wN7fidBgTclN/QSY/G1YPlJe1V1mO8B91LC85LrpgHVh1I1n184DTAFRbw/Y4zDOKGW+/eoH29it151bjPozSvdZvhTo8ekPEC2XqzzgNoULo/+1JQM9O8pEFk6hkV8O9XrY+U/7NuKVxM2dsGBDXN+Seu33E9KfP/SHdHrhxPXVpjSR31yCYg+iiGbymCk+ul+9p7EaNXdeBT86uCpKHL5uOykrEvDH5yE5tBotEFyIwHV+B9X7AyzKpVoOk+Uxg2qwLjqeQLe8Z85GD0GrPe9+0DizryqKbEtiKJoQTSL5pj4UN1lfznzbmw7dNgs3HLr1uqHHaaznbqyGjgAMro6kQzxLYm3fbCF1PDyG6/XuamGenoZsjkzj125fqCuDnc7xJYiQoZZCRPBD3AJu8m2rr2sy7YbyEpY8ernGPHOE4oekKDEqyZrxl1RUtVLlfGYJFc4S8j+55rQEd2CdMUw98g3RcAjkNwlfcaQ01mYHA6/Dv+3iU+OPaRhPKw66Sg3JL3qcQ5NvBMWrmSN/ELiG6EEcQKKaRgHtr7o1eS9+HB8xa595xuf6Vo/TSN5MfXEbFc5b5/GpyaZv+9XWS9QiBoqqQjczNbTZ9EFy/1GCc++Uc44Ww9yw3btKCeDA0oixVAr8FMjg1mCu9WXArI+2BbZxSzr3Az6oVjRXs2qxth65JPA8uk9nuZRfGAfm8LqJjm/YHt7NKvtwW6rWJUqIZfSrfFYM/aX5RGO2CM5DKhQ2Bb4QTGFHXcrXy3n1bZtCcfJsCIv5rGuAluXWOiwdihGkKho5ebBOdvr8oPrKVBz25/LQfuKunRy+jyL1jpGt3VDEL8DuGqQpgejzmHLmsk8uTKeM66eqwZFT5oMmsXkyqFnDgaIvUw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOWxm1amukv1tjTESuvZKjamjubPuTeTPMcP9QnTHRDWA4d5l-LKHR8L5PrhCZ_uJA2&amp;t=639191968340000000" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var localizeDelay;//]]>
+</script>
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3ade%3a15e07564-f3d5-441e-a01b-5763caea6096%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%3ade%3a77834329-9f9d-4011-8eac-a82ffa414dd7%3a16e4e7cd%3af7645509%3a22a6274a%3aed16cbdc%3a33715776%3a58366029%3a24ee1bba%3ae330518b%3a2003d0b8%3ac128760b%3a88144a7a%3a1e771326%3ac8618e41%3a1a73651d%3a333f8d94%3bAjaxControlToolkit%2c+Version%3d20.1.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3ade%3ac4eb885e-4e86-4858-819d-193000598f6e%3acd9be5ef%3ab7a47d44%3af2800037%3a2761bb61%3a10439726%3ac99a1521%3adffb332%3a891e6cc6%3a9833e5c%3af06639ea%3a98f9cc63%3adda46be5%3a7b2ffb77%3ad6567903" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="43B862AC" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="5xpDJ29X9YQlT97XLOILREYOvtgjufDG7bCwTCPviL5dncJ0_33Fyl0tVPtzhvUJprcRfAwMfCUWEhlCP1ur66oq9N7vmwOvTkLIQ_InYlQ1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ssoIl1KbfpJpgaqn+kK3GKRCT47brrxBSX4EMsYV2qXBSURQI7BKZGPVFAlrhp76eh1kxPfux0r9B805MvyZwadfkiPn2BI+fQj0UhF8qQfCxll9Od/jUGKWcLpRCKZgZnexL+WaAVoVNXVAqcJc6amQZNsPzAcaWnVUhGdoFbkywK0OZFXQ/rBX3sLkdsN2XDdBXmQELCvg52pK3ANgz6t/MwOJf8F6/wTjXk4Oj6WByShcSA6rM83tZaGU4Z5xcLvLmu1vjbSp6UON4UP+61tBwpkZjAc6r90QvlOSdfggekddyKAuK5SInEOap+ItmAFxS4WitclPUQs3X9VRbys/2MeL1pPaQN27Tx/KSUK525vGfssAkfCm0fHZRb3BUpGdXCT8eEWqTLUiKwTsBFz7lfbHAMF6nsPrm4VSnutb0rieh/IjSttGuQWRUT51gP2xCfNPdEoW3RoZjQABI0LT643gQO4ed2KwIP4KhhozCP4H/WX+eSoGXCAjVrQijHmXXlyd0ocdga2+J6HxiIzklMqFzgX4Xx6CQfncdT8=" />
+</div>
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$RadScriptManager1', 'aspnetForm', ['tctl00$RadAjaxManager1SU',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+	<!-- 2020.2.617.45 --><div id="ctl00_RadAjaxManager1SU">
+	<span id="ctl00_RadAjaxManager1" style="display:none;"></span>
+</div>
+	<table class="masterPageHeader" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<img style="display: block" src="images/Oesta_Header.png" alt="" />
+			</td>
+			<td align="right">
+				<!--<img style="display: block" src="images/page_header_right.png" alt="" />-->
+			</td>
+		</tr>
+	</table>
+	<table class="masterPageContent" cellpadding="0" cellspacing="0">
+		<tr>
+			<td style="height: 100%; vertical-align: top">
+				<img src="images/quicklinkarea_header.png" alt="" />
+			</td>
+			<td style="width: 99%; height: 100%; vertical-align: top">
+				<div style="width: 100%; height: 100%" id="divMainArea">
+					
+	<script type="text/javascript">
+	    
+        // Implementing the hack when popup (iframe) did not closed when user click outside body
+	    document.body.parentElement.addEventListener('click', fn, true); 
+	    function fn() {
+	        var elPopup = document.getElementById("ctl00_cphMainArea_pnlContext");
+	        if (elPopup != null)
+	            elPopup.style.visibility = "hidden";
+	    }
+
+	    <!--
+	    function openimage(veid) {
+	        debugger;
+	        // Lade das erste Ansichtsbild der VE.
+	        var url = "bild.aspx?VEID=" + veid + "&DEID=10";
+	        window.open(url, "BildAnsicht", "width=300,height=300,left=" + (screen.width - 300) / 2 + ",top=" + (screen.height - 300) / 2 + ",dependent=yes,menubar=no,desktopToolBar=no,scrollbars=yes,resizable=yes");
+	    }
+
+	    function openReport(theURL, winName, features) {
+	        winName = '_blank';
+	        var reportWindow;
+	        reportWindow = window.open(theURL, winName, features);
+	        reportWindow.focus();
+	    }
+	    //-->
+	</script>
+	<div class="desktop">
+		<h1>
+			<span id="ctl00_cphMainArea_lblTitel">Resultatliste</span>
+		</h1>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" class="listOfResultsInfo">
+			<tr>
+				<td>
+					
+				</td>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					&nbsp;
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+		</table>
+		<div id="ctl00_cphMainArea_rgrdListe" class="RadGrid RadGrid_Query ResultList" style="width:100%;">
+
+<table class="rgMasterTable" id="ctl00_cphMainArea_rgrdListe_ctl00" style="width:100%;table-layout:auto;empty-cells:show;">
+	<colgroup>
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+	</colgroup>
+<thead>
+		<tr>
+			<th scope="col" class="rgHeader">
+							
+						</th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;vrzng_enht_titel&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl02&#39;,&#39;&#39;)">Titel/Darin</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;bgn_dt_stnd&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl03&#39;,&#39;&#39;)">Zeitraum</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;vrzng_enht_entrg_typ_nm&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl04&#39;,&#39;&#39;)">Stufe</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;sgntr_cd&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl05&#39;,&#39;&#39;)">Signatur</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;hrch_pfad&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl11&#39;,&#39;&#39;)">AP</a></th><th scope="col" class="rgHeader"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;bild_anst_ind&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl12&#39;,&#39;&#39;)"></a></th><th scope="col" class="rgHeader">&nbsp;</th><th scope="col" class="rgHeader rgSorted"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_cphMainArea_rgrdListe_ctl00&#39;), &#39;rlvnz&#39;); return false;" title="Sortieren" href="javascript:__doPostBack(&#39;ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl13&#39;,&#39;&#39;)">Relevanz</a>&nbsp;<input type="submit" name="ctl00$cphMainArea$rgrdListe$ctl00$ctl02$ctl01$ctl14" value=" " title="Absteigend sortiert" class="rgSortDesc" /></th>
+		</tr>
+	</thead><tfoot>
+		<tr class=" rgPager">
+			<td colspan="9">
+					<div style="text-align: right">
+						<span style="text-align: left; float: left" class="rgWrap">
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl03_ctl01_lblPagerInfo" class="pagerInfo">Keine Einträge vorhanden.</span>
+							<span id="ctl00_cphMainArea_rgrdListe_ctl00_ctl03_ctl01_lblSearchTime" class="searchTime">(0,00s)</span>
+						</span><span>
+							
+						</span>
+					</div>
+				</td>
+		</tr>
+	</tfoot><tbody>
+	<tr class="rgNoRecords">
+		<td colspan="9" style="text-align:left;"><div></div></td>
+	</tr>
+	</tbody>
+
+</table><div id="ctl00_cphMainArea_rgrdListe_SharedCalendarContainer" style="display:none;">
+
+</div><input id="ctl00_cphMainArea_rgrdListe_ClientState" name="ctl00_cphMainArea_rgrdListe_ClientState" type="hidden" />	</div>
+
+		<div id="ctl00_cphMainArea_pnlContext" style="height:180px;width:670px;display: none;
+			z-index: 100">
+	
+		
+</div>
+		<br />
+		<table id="ctl00_cphMainArea_tblSuchkriterien">
+	<tr>
+		<td class="desktopMainText" valign="top" colspan="2" style="font-weight:bold;">Suchkriterien</td>
+	</tr><tr>
+		<td class="desktopMainText" valign="top" style="width:150px;">Mit allen Wörtern</td><td class="desktopMainText" valign="top">Chiffre</td>
+	</tr>
+</table>
+	</div>
+
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div id="divLogin" class="masterPageLogin">
+		<table id="ctl00_lacLoginArea_tblLoginArea">
+	<tr align="left">
+		<td id="ctl00_lacLoginArea_tcHome" class="loginArea" style="white-space:nowrap;"><a id="ctl00_lacLoginArea_lbtHome" class="loginArea" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lacLoginArea$lbtHome&quot;, &quot;&quot;, false, &quot;&quot;, &quot;default.aspx&quot;, false, true))">Startseite</a></td><td id="ctl00_lacLoginArea_tcHomeSep" class="loginArea" style="white-space:nowrap;"><span id="ctl00_lacLoginArea_lblHome" class="loginArea">|</span></td><td id="ctl00_lacLoginArea_tcBestellkorbImg" class="loginArea" style="white-space:nowrap;padding-right: 0px"></td><td id="ctl00_lacLoginArea_tcBestellkorbText" class="loginArea" style="white-space:nowrap;padding-left: 0px"></td><td id="ctl00_lacLoginArea_tcAnmeldeinfo" class="loginArea" style="white-space:nowrap;"><a id="ctl00_lacLoginArea_lbtAnmeldeinfo" class="loginArea" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lacLoginArea$lbtAnmeldeinfo&quot;, &quot;&quot;, false, &quot;&quot;, &quot;anmelden.aspx&quot;, false, true))">Anmelden</a></td><td id="ctl00_lacLoginArea_tcAbmeldenSep" class="loginArea" style="white-space:nowrap;"><span id="ctl00_lacLoginArea_lblAbmeldenSep" class="loginArea">|</span></td><td id="ctl00_lacLoginArea_tcSprache" class="loginArea" style="white-space:nowrap;"><a class="loginAreaSelected" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl00&#39;,&#39;&#39;)">de</a> <a class="loginArea" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl01&#39;,&#39;&#39;)">en</a> <a class="loginArea" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl02&#39;,&#39;&#39;)">fr</a> <a class="loginArea" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl03&#39;,&#39;&#39;)">it</a> <a class="loginArea" href="javascript:__doPostBack(&#39;ctl00$lacLoginArea$ctl04&#39;,&#39;&#39;)">nl</a></td>
+	</tr>
+</table>
+
+	</div>
+	<div id="divMasterPageTitle" class="masterPageTitle">
+		<span id="ctl00_lblMasterPageTitel"></span>
+	</div>
+	<div id="divMenu" class="masterPageMenu">
+		<div tabindex="1" id="ctl00_radMenu" class="RadMenu RadMenu_Query">
+	<ul class="rmRootGroup rmHorizontal">
+		<li class="rmItem rmFirst"><a accesskey="1" class="rmLink rmRootLink" href="suchinfo.aspx"><span class="rmText">Suche</span></a><div class="rmSlide">
+			<ul class="rmVertical rmGroup rmLevel1">
+				<li class="rmItem rmFirst"><a class="rmLink" href="volltextsuche.aspx"><span class="rmText">Volltextsuche</span></a></li><li class="rmItem "><a class="rmLink" href="feldsuche.aspx"><span class="rmText">Feldsuche</span></a></li><li class="rmItem rmLast"><a class="rmLink" href="archivplansuche.aspx"><span class="rmText">Archivplansuche</span></a></li>
+			</ul>
+		</div></li><li class="rmItem "><a class="rmLink rmRootLink" href="#"><span class="rmText">Letztes Suchresultat</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="arbeitsmappen.aspx"><span class="rmText">Arbeitsmappen</span></a></li><li class="rmItem rmLast"><a class="rmLink rmRootLink" href="#"><span class="rmText">Info Corner</span></a><div class="rmSlide">
+			<ul class="rmVertical rmGroup rmLevel1">
+				<li class="rmItem rmFirst rmLast"><a class="rmLink" href="kontakt.aspx"><span class="rmText">Kontakt</span></a></li>
+			</ul>
+		</div></li>
+	</ul><input id="ctl00_radMenu_ClientState" name="ctl00_radMenu_ClientState" type="hidden" />
+</div>
+	</div>
+	<div id="divQuickLinkArea" class="masterPageQuickLinkArea">
+		
+	
+<div class="quickLink">
+	<div class="quickLinkHeader">
+	</div>
+	
+	<dl>
+		<dt class="quickLinkItem"><input type="image" name="ctl00$cphQuicklinkArea$apActionPanel$_ap_imgWechselnZuListe" id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgWechselnZuListe" disabled="disabled" class="aspNetDisabled" src="images/ico_listenansicht.png" alt="In die Liste wechseln" /></dt><dd class="quickLinkItem"><span id="ctl00_cphQuicklinkArea_apActionPanel__ap_lblWechselnZuListe">In die Liste wechseln</span></dd><dt class="quickLinkItem"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgWechselnZuBildliste" href="bildansicht.aspx"><img src="images/ico_bildansicht.png" alt="In die Bildliste wechseln" /></a></dt><dd class="quickLinkItem"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkWechselnZuBildliste" href="bildansicht.aspx">In die Bildliste wechseln</a></dd><dt class="quickLinkItem"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgWechselnZuBilduebersicht" href="portfolio.aspx"><img src="images/ico_spaltenansicht.png" alt="In die Bildübersicht wechseln" /></a></dt><dd class="quickLinkItem"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkWechselnZuBilduebersicht" href="portfolio.aspx">In die Bildübersicht wechseln</a></dd><dt class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgSucheInnerhalbResultatliste" class="aspNetDisabled"><img src="images/ico_suche_innerhalb_der_resultate.png" alt="Suche innerhalb der Resultate" /></a></dt><dd class="quickLinkItemBeginGroup"><span id="ctl00_cphQuicklinkArea_apActionPanel__ap_lblSucheInnerhalbResultatliste">Suche innerhalb der Resultate</span></dd><dt class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgPdfErzeugen" href="JavaScript:openReport(&#39;report.aspx?rpt=0&#39;,&#39;Print&#39;,&#39;scrollbars=yes,width=640,height=640,resizable=yes&#39;);"><img src="images/ico_pdf.png" alt="Als PDF anzeigen" /></a></dt><dd class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkPdfErzeugen" href="JavaScript:openReport(&#39;report.aspx?rpt=0&#39;,&#39;Print&#39;,&#39;scrollbars=yes,width=640,height=640,resizable=yes&#39;);">Als PDF anzeigen</a></dd><dt class="quickLinkItemBeginGroup"><input type="image" name="ctl00$cphQuicklinkArea$apActionPanel$_ap_imgInArbeitsmappeLegen" id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgInArbeitsmappeLegen" disabled="disabled" class="aspNetDisabled" src="images/ico_in_arbeitsmappe.png" alt="Markierte in Arbeitsmappe legen" /></dt><dd class="quickLinkItemBeginGroup"><span id="ctl00_cphQuicklinkArea_apActionPanel__ap_lblInArbeitsmappeLegen">Markierte in Arbeitsmappe legen</span></dd><dt class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_imgHilfe" href="JavaScript:ShowHelp(&#39;de&#39;,%20&#39;ResultatslistePage.htm&#39;)"><img src="images/ico_hilfe.png" alt="Hilfe" /></a></dt><dd class="quickLinkItemBeginGroup"><a id="ctl00_cphQuicklinkArea_apActionPanel__ap_lnkHilfe" href="JavaScript:ShowHelp(&#39;de&#39;,%20&#39;ResultatslistePage.htm&#39;)">Hilfe</a></dd>
+	</dl>
+	<div class="quickLinkFooter">
+	</div>
+</div>
+
+	<br />
+	
+<div class="legend">
+	<div class="legendHeader">
+		<span id="ctl00_cphQuicklinkArea_leLegende_lblLegende">Legende</span>
+	</div>
+	<dl>
+		<dt><img alt="" src="images/ico_lokalisieren_g.png" /></dt><dd><span>Lokalisieren im Archivplan</span></dd><dt><img alt="" src="images/ico_bild_anzeigen_g.png" /></dt><dd><span>Bild vorhanden, klicken zum Anzeigen</span></dd>
+	</dl>
+	<div class="legendFooter">
+	</div>
+</div>
+
+	
+
+<div id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_pnlPopup" class="modalPopup" style="display: none">
+	
+	<div id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_pnlCaption" class="modalPopupCaption">
+		
+		<span id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblPopupTitel">In Arbeitsmappe legen</span>
+	
+	</div>
+	<br />
+	<table>
+		<tr>
+			<td>
+				<label for="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_cboArbeitsmappe" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblArbeitsmappe">Arbeitsmappe:</label>
+			</td>
+			<td>
+				<select name="ctl00$cphQuicklinkArea$zuArbeitsmappeHinzufuegen$cboArbeitsmappe" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_cboArbeitsmappe" onchange="if (this.selectedIndex != 0){document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblBezeichnung&#39;).disabled=&#39;disabled&#39;;document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung&#39;).disabled=&#39;disabled&#39;;document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung&#39;).value=&#39;&#39;;}else{document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblBezeichnung&#39;).disabled=&#39;&#39;;document.getElementById(&#39;ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung&#39;).disabled=&#39;&#39;;}" style="width:226px;">
+		<option selected="selected" value="">&lt;neue Arbeitsmappe&gt;</option>
+
+	</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_lblBezeichnung">Bezeichnung:</label>
+			</td>
+			<td>
+				<input name="ctl00$cphQuicklinkArea$zuArbeitsmappeHinzufuegen$txtBezeichnung" type="text" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_txtBezeichnung" style="width:220px;" />
+			</td>
+		</tr>
+	</table>
+	<br />
+	<div style="text-align: right; white-space: nowrap">
+		<input type="submit" name="ctl00$cphQuicklinkArea$zuArbeitsmappeHinzufuegen$cmdPopupOk" value="OK" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_cmdPopupOk" />
+		<input type="submit" name="ctl00$cphQuicklinkArea$zuArbeitsmappeHinzufuegen$cmdPopupAbbrechen" value="Abbrechen" id="ctl00_cphQuicklinkArea_zuArbeitsmappeHinzufuegen_cmdPopupAbbrechen" /></div>
+
+</div>
+
+
+
+	</div>
+	<div id="divLogo" class="masterPageLogo">
+		<a id="ctl00_hylLogo" title="Startseite" href="default.aspx"><img title="Startseite" src="images/logo.png" alt="Startseite" /></a>
+	</div>
+	
+
+<div class="cookieBannerOuter hidden">
+	<div class="cookieBannerInner">
+		<span>This site uses cookies to offer you a safer browsing experience and personalize content.</span>
+		<div class="cookieBannerButtonsArea">
+			<a class="cookieMoreInfoButton" href="PrivacyPolicy.aspx" target="_blank">More</a>
+			<a class="cookieConfirmationButton" onClick="return acceptCookiePolicy()" href="#">Accept</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+		var cookieName = "scopeQuery-gdprAccepted";
+
+		function acceptCookiePolicy() {
+			document.cookie = cookieName + "=1; path=/";
+			var panel = $(".cookieBannerOuter");
+			panel.addClass("hidden");
+			return false;
+		}
+
+		function updateCookieBannerVisibility() {
+			var rx = new RegExp("(?:^|;)\\s*" + cookieName + "\\s*=", 'm');
+			var accepted = document.cookie.search(rx) >= 0;
+
+			var panel = $(".cookieBannerOuter");
+			if (accepted)
+				panel.addClass("hidden");
+			else
+				panel.removeClass("hidden");
+		}
+
+		$(function () {
+			updateCookieBannerVisibility();
+		});
+
+	</script>
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl00_RadScriptManager1_TSM');Sys.Extended.UI.Localization.SetLocale("de");Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ctl00$RadAjaxManager1","updatePanelsRenderMode":0}, null, null, $get("ctl00_RadAjaxManager1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_cphMainArea_rgrdListe","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"ShouldCreateRows":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0},"Scrolling":{},"Resizing":{},"ClientMessages":{},"KeyboardNavigationSettings":{"AllowActiveRowCycle":false,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37,"MoveDownKey":40,"MoveUpKey":38,"SaveChangesKey":85,"CancelChangesKey":81},"Animation":{},"Virtualization":{}},"Skin":"Query","SortingSettings":{"SortToolTip":"Sortieren","SortedAscToolTip":"Aufsteigend sortiert","SortedDescToolTip":"Absteigend sortiert","SortedBackColor":{"R":0,"G":0,"B":0,"A":0,"IsKnownColor":false,"IsEmpty":true,"IsNamedColor":false,"IsSystemColor":false,"Name":"0"},"EnableSkinSortStyles":true,"ViewState":{}},"UniqueID":"ctl00$cphMainArea$rgrdListe","_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_defaultDateTimeFormat":"dd.MM.yyyy HH:mm:ss","_editIndexes":"[]","_embeddedSkin":false,"_freezeText":"Freeze","_gridTableViewsData":"[{\"ClientID\":\"ctl00_cphMainArea_rgrdListe_ctl00\",\"UniqueID\":\"ctl00$cphMainArea$rgrdListe$ctl00\",\"PageSize\":10,\"PageCount\":1,\"EditMode\":\"EditForms\",\"AllowPaging\":true,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":false,\"AllowNaturalSort\":false,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"CheckListWebServicePath\":\"\",\"GroupLoadMode\":\"Server\",\"PagerAlwaysVisible\":true,\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"hasDetailItemTemplate\":false,\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_columnsData\":[{\"UniqueName\":\"Markiert\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"TitelDarin\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"vrzng_enht_titel\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"Zeitraum\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"SortExpression\":\"bgn_dt_stnd\",\"DataTypeName\":\"System.String\",\"DataField\":\"zt_raum_txt\",\"Display\":true},{\"UniqueName\":\"Stufe\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"SortExpression\":\"vrzng_enht_entrg_typ_nm\",\"DataTypeName\":\"System.String\",\"DataField\":\"vrzng_enht_entrg_typ_nm\",\"Display\":true},{\"UniqueName\":\"Signatur\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"sgntr_cd\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"HierarchiePfad\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"hrch_pfad\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"BildLink\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridHyperLinkColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"bild_anst_ind\",\"DataTypeName\":\"System.String\",\"DataTextField\":\"\",\"DataTextFormatString\":\"\",\"DataNavigateUrlFields\":[],\"DataNavigateUrlFormatString\":\"\",\"Display\":true},{\"UniqueName\":\"TemplateColumn\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"Relevanz\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"SortExpression\":\"rlvnz\",\"DataTypeName\":\"System.Decimal\",\"DataField\":\"rlvnz\",\"Display\":true}]}]","_masterClientID":"ctl00_cphMainArea_rgrdListe_ctl00","_shouldFocusOnPage":false,"_unfreezeText":"Unfreeze","allowMultiRowSelection":false,"clientStateFieldID":"ctl00_cphMainArea_rgrdListe_ClientState","renderMode":1}, null, null, $get("ctl00_cphMainArea_rgrdListe"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_postBackReference":"__doPostBack(\u0027ctl00$radMenu\u0027,\u0027arguments\u0027)","_skin":"Query","clientStateFieldID":"ctl00_radMenu_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"items":[{"value":"Suche.Volltextsuche","navigateUrl":"~/volltextsuche.aspx"},{"value":"Suche.Feldsuche","navigateUrl":"~/feldsuche.aspx"},{"value":"Suche.Archivplansuche","navigateUrl":"~/archivplansuche.aspx"}],"value":"Suche","navigateUrl":"~/suchinfo.aspx"},{"value":"LetztesSuchresultat"},{"value":"Arbeitsmappen","navigateUrl":"~/arbeitsmappen.aspx"},{"items":[{"value":"InfoCorner.Kontakt","navigateUrl":"~/kontakt.aspx"}],"value":"InfoCorner"}]}, null, null, $get("ctl00_radMenu"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

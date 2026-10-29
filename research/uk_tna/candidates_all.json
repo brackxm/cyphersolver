@@ -1,0 +1,722 @@
+[
+ {
+  "year": 1781,
+  "date": "26 Apr - 5 May 1781",
+  "title": "Cornwallis papers: Balfour, Rawdon and Craig letters left in cipher and undeciphered",
+  "correspondents": "Balfour / Rawdon / J. H. Craig to Cornwallis",
+  "place": "Charles Town, Camden, Wilmington",
+  "language": "English",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "TNA PRO 30/11/6/23, 6/25-26, 6/54; PRO 30/11/69/16-18",
+  "folio_note": "about 6 items; catalogue: 'Mostly in cipher and not deciphered', 'In cipher and undeciphered'",
+  "cls": "B",
+  "status": "Catalogue marks each undeciphered. Neighbours were read in targets/balfour1781 (confirm which of these are already inside it). Not digitised. Not on DECODE.",
+  "why": "Southern campaign 1781 despatches; a key family already exists.",
+  "importance": 4,
+  "solvability": 3,
+  "difficulty": 2,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Compare PRO 30/11/6/23, /25, /54 with targets/balfour1781/NOTES.md; then get copies.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C6671501"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1723,
+  "date": "Nov 1723",
+  "title": "Atterbury plot: cipher papers obtained by Shortiss; decipherers say 'cannot be decyphered without vast trouble'; 'Undecyphered paper'",
+  "correspondents": "J. Shortiss; Mr Ward; Willes and Ashfield (decipherers)",
+  "place": "Paris",
+  "language": "English",
+  "region": "England",
+  "period": "1701-1800",
+  "shelfmark": "TNA SP 35/46 (SP 35/46/4, /9, /18, /47, /59)",
+  "folio_note": "several enclosed cipher papers",
+  "cls": "B",
+  "status": "Catalogue: decipherers could not read it without more text. Neighbouring SP 35 ciphers exist. Not on DECODE.",
+  "why": "Atterbury plot (1722-23) Jacobite cipher correspondence.",
+  "importance": 4,
+  "solvability": 3,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Open SP 35/46/59 'Undecyphered paper'; search the Decipherers' papers in BL Add MS.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C17214530"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1648,
+  "date": "28 Oct 1648",
+  "title": "Copy of cipher letter from Charles I at Newport to the Duke of Ormonde",
+  "correspondents": "Charles I to James Butler, Duke of Ormonde",
+  "place": "Newport, Isle of Wight",
+  "language": "unknown",
+  "region": "England",
+  "period": "1611-1650",
+  "shelfmark": "Northumberland Archives, ZSW/554/1 (Swinburne of Capheaton)",
+  "folio_note": "copy of cipher letter",
+  "cls": "B",
+  "status": "Contemporary copy; the Newport-period cipher letters are partly read in print (Carte). Not on DECODE.",
+  "why": "Charles I's last cipher letter to Ormonde.",
+  "importance": 4,
+  "solvability": 3,
+  "difficulty": 2,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Compare with Carte's Ormonde Papers.",
+  "links": [
+   {
+    "label": "Discovery record (Northumberland Archives)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/2a186a49-aafd-4561-beff-4f4c43d80828"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1780,
+  "date": "10 Oct 1780",
+  "title": "Cornwallis papers: Charlotte Town, money to Major Wemyss, number cipher not deciphered",
+  "correspondents": "unknown (Cornwallis circle) to Major James Wemyss",
+  "place": "Charlotte Town (Charlotte, NC)",
+  "language": "English",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "TNA PRO 30/11/3/207-209 (Cornwallis Papers, Packet 3)",
+  "folio_note": "3 items (ff. 207-209); catalogue: 'In number cipher, not deciphered'",
+  "cls": "C",
+  "status": "Catalogue: 'In number cipher, not deciphered'. Not digitised at TNA (Discovery digitised=false); microfilm of PRO 30/11 exists (UNB Loyalist collection). Not on DECODE (known.py). Related to targets/balfour1781 and the Saberton/Lovell southern British ciphers.",
+  "why": "Number cipher of the Carolina campaign; the known British southern keys may fit.",
+  "importance": 4,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Get a TNA copy or the microfilm; test the balfour1781 'Common cipher' key against the numbers.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C6671059"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found); Saberton 2019 not read in full",
+  "access": "archive"
+ },
+ {
+  "year": 1745,
+  "date": "7 Mar - 5 Jun 1745",
+  "title": "Jacobite letters found on Blair and Maclean at arrest, partly in undecoded cipher (Sheridan, 'Burnet', Barclay)",
+  "correspondents": "Thomas Sheridan; 'Burnet'; J. Barclay to Sir Hector Maclean ('Cleland') / George Blair",
+  "place": "Paris, Versailles",
+  "language": "unknown",
+  "region": "Other",
+  "period": "1701-1800",
+  "shelfmark": "TNA SP 36/66/100-109, 115, 119",
+  "folio_note": "about 10 folios, each 'partly in undecoded cipher'; enclosed in f. 115 'for deciphering'",
+  "cls": "C",
+  "status": "Catalogue says undecoded for each folio. Decipherers' reply not seen. Not digitised; not on DECODE.",
+  "why": "Letters of the eve of the '45 between the Jacobite court and Scottish supporters.",
+  "importance": 4,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Check SP 36/66 for a decipher sheet and the Decipherers' papers in BL Add MS.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C7768884"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1708,
+  "date": "1708-1709",
+  "title": "Whitworth's Russia despatches, copies 'partly in undecoded cipher'",
+  "correspondents": "Charles Whitworth to Boyle / Harley",
+  "place": "Moscow",
+  "language": "English",
+  "region": "Other",
+  "period": "1701-1800",
+  "shelfmark": "TNA SP 91/6/9, /99, /144, /210, /213, /222, /225; SP 91/5/298",
+  "folio_note": "about 8 folios; SP 91/5/298 is an 'undeciphered duplicate of f. 294 (deciphered version)'",
+  "cls": "A",
+  "status": "Deciphered versions exist in the same volume for the duplicates, giving paired plaintext and ciphertext. Not digitised.",
+  "why": "Great Northern War despatches with ready cribs.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 2,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Match SP 91/5/298 with SP 91/5/294.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C6719693"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1645,
+  "date": "30 Jun 1645",
+  "title": "George Digby to William Legge, explanations of defeat (coded part not deciphered)",
+  "correspondents": "George Digby to William Legge",
+  "place": "unknown",
+  "language": "English",
+  "region": "England",
+  "period": "1611-1650",
+  "shelfmark": "Staffordshire Record Office, D(W)1778/I/i/56 (Dartmouth/Legge papers)",
+  "folio_note": "one letter; 'Coded part not deciphered'; 'Not Digby's hand'",
+  "cls": "B",
+  "status": "Catalogue says not deciphered. The 1645 Digby/Nicholas/Goring keys are in BL Add MS 32256 (see catalogue.json). Not on DECODE.",
+  "why": "Naseby aftermath; Royalist 1645 key family exists.",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 2,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Get an image from Staffordshire RO; try the SP 106/3 and BL 32256 keys.",
+  "links": [
+   {
+    "label": "Discovery record (Staffordshire RO)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/750f061a-d5f1-41d0-b7dd-c099644253b7"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1645,
+  "date": "9 Aug 1645",
+  "title": "Prince Rupert to unknown, in code (not deciphered)",
+  "correspondents": "Prince Rupert to unknown",
+  "place": "unknown",
+  "language": "English",
+  "region": "England",
+  "period": "1611-1650",
+  "shelfmark": "Staffordshire Record Office, D(W)1778/I/i/59 (Dartmouth/Legge papers)",
+  "folio_note": "one letter 'In code. Not deciphered'",
+  "cls": "B",
+  "status": "Catalogue says not deciphered. Rupert 1645 letters were read with Lasry's SP 106 keys (targets/rupert1645). Not on DECODE.",
+  "why": "Rupert before Bristol; same 1645 key family.",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 2,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Get an image; try the keys of targets/rupert1645.",
+  "links": [
+   {
+    "label": "Discovery record (Staffordshire RO)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/ae899592-63ec-4920-a91b-4ddd0c5f9620"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1580,
+  "date": "8 Feb 1580",
+  "title": "Sir Henry Wallop to Walsingham, cipher partly deciphered and partly obliterated",
+  "correspondents": "Sir Henry Wallop to Francis Walsingham",
+  "place": "Dublin",
+  "language": "English",
+  "region": "England",
+  "period": "1560-1589",
+  "shelfmark": "TNA SP 63/71/52",
+  "folio_note": "ff. 106-107; cipher part about the lord justice",
+  "cls": "B",
+  "status": "Catalogue: 'Cipher, partly deciphered and partly obliterated'. The Pelham cipher of Nov 1579 (Carew MSS, Lambeth Palace Library) is a key lead. Not on DECODE.",
+  "why": "Desmond rebellion; the Carew keys may finish it.",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 2,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Compare with Pelham's cipher in the Calendar of Carew MSS (20 Nov 1579).",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C10245605"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1779,
+  "date": "8 Jul 1779",
+  "title": "Bouille, governor of Martinique, to Sartine, letter 'partly deciphered'",
+  "correspondents": "Marquis de Bouille to Antoine de Sartine",
+  "place": "Martinique",
+  "language": "French",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "TNA CO 166/1/31",
+  "folio_note": "pp. 194-202",
+  "cls": "B",
+  "status": "Duplicate of a captured letter, partly deciphered by the British. Not digitised. Not on DECODE.",
+  "why": "Intelligence from the American war in the West Indies.",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Check CO 166/1 neighbours for a French key.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C9120273"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1666,
+  "date": "Oct 1666 - 27 Feb 1667",
+  "title": "Arlington to Sandwich (Madrid), almost entirely in cypher on the Treaty with Spain",
+  "correspondents": "Lord Arlington to Earl of Sandwich",
+  "place": "Whitehall to Madrid",
+  "language": "English",
+  "region": "England",
+  "period": "1651-1700",
+  "shelfmark": "Bodleian Library, MS. Carte 75 fols. 493, 498-499",
+  "folio_note": "2 letters, mostly cipher",
+  "cls": "B",
+  "status": "The Bodleian summary gives the content, so a decipherment is probably attached; not confirmed. Likely already read.",
+  "why": "Anglo-Spanish treaty of 1667.",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 2,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Check whether the volume has interlinear decipherment.",
+  "links": [
+   {
+    "label": "Discovery record (Bodleian)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/e3f1f349-1d78-44e7-a01b-1ccc43ead567"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "unclear (the summary suggests it was read)",
+  "access": "archive"
+ },
+ {
+  "year": 1795,
+  "date": "1795-1797",
+  "title": "Wickham papers: Foreign Affairs letters, some in cipher",
+  "correspondents": "William Wickham and correspondents",
+  "place": "Switzerland / Germany",
+  "language": "English",
+  "region": "Central Europe",
+  "period": "1701-1800",
+  "shelfmark": "Hampshire Archives, 38M49/1/3/1-9; 38M49/1/10/1-51",
+  "folio_note": "about 60 items, 'some in cipher'",
+  "cls": "B",
+  "status": "Wickham's correspondence was printed in 1870, which may decode some. Not on DECODE.",
+  "why": "British secret service in Switzerland in the Revolution.",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Compare with the 1870 edition.",
+  "links": [
+   {
+    "label": "Discovery record (Hampshire Archives)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/9910114e-671a-40ae-a4a7-e524c261afb5"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1662,
+  "date": "May 1662 (ff. 187-317)",
+  "title": "Holland 1662 intercepts: about nine folios of 'Undecoded cipher', one a Spanish king to the Marques de la Fuente",
+  "correspondents": "King of Spain / unknown to Marques de la Fuente / Williamson",
+  "place": "Netherlands",
+  "language": "Spanish",
+  "region": "Low Countries",
+  "period": "1651-1700",
+  "shelfmark": "TNA SP 84/165/112, /131, /134, /141, /148, /151, /177, /181, /182, /183 (ff. 187-317)",
+  "folio_note": "9 or 10 folios; f. 187 'Mainly undecoded cipher, one decoded paragraph in Spanish'",
+  "cls": "C",
+  "status": "Catalogue says 'Undecoded cipher' for each. f. 187 has one decoded paragraph, a crib. Not digitised; not on DECODE. Chauran / de Bacquoy letters to Williamson in the same volume send ciphers (SP 84/165/36, /54, /75): key leads.",
+  "why": "Restoration-era intercepts and spy ciphers to Williamson; f. 187 gives a crib.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Obtain f. 187 with its decoded paragraph; check CSP for a calendared reading.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C7306704"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1884,
+  "date": "19 Oct 1884",
+  "title": "Wolseley to Gordon, telegram in code annotated 'cipher unknown (Gordon unable to decipher it)'",
+  "correspondents": "Lord Wolseley to General Gordon",
+  "place": "Wadi Halfa",
+  "language": "English",
+  "region": "Other",
+  "period": "1801-1900",
+  "shelfmark": "TNA PRO 30/57/4/119 (Kitchener papers)",
+  "folio_note": "one telegram",
+  "cls": "C",
+  "status": "Annotation says Gordon could not read it. The Kitchener papers also hold decodes of Gordon-relief telegrams (PRO 30/57/4/134-135). Not on DECODE.",
+  "why": "Khartoum relief; the cipher Gordon could not read (Hansard 27 Feb 1885).",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "View the Discovery item; look for the matching decode in PRO 30/57/4.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C6686796"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: web search found a Hansard question only, no solution)",
+  "access": "archive"
+ },
+ {
+  "year": 1743,
+  "date": "2 Sep 1743",
+  "title": "Newcastle to Carteret, enclosing a letter to '101' [undeciphered]",
+  "correspondents": "Duke of Newcastle to Lord Carteret",
+  "place": "Whitehall",
+  "language": "English",
+  "region": "England",
+  "period": "1701-1800",
+  "shelfmark": "TNA SP 87/13/85",
+  "folio_note": "ff. 174-175; enclosure to '101' undeciphered",
+  "cls": "C",
+  "status": "Calendar says undeciphered; original in cipher. Not digitised. Not on DECODE.",
+  "why": "Dettingen campaign politics.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Check SP 87/13 for a key in the volume.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C9188928"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1709,
+  "date": "1709-1713",
+  "title": "Jacobite intrigues for the Restoration written with substituted words (partly deciphered)",
+  "correspondents": "Earl of Middleton, Sir David Nairne and others",
+  "place": "unknown",
+  "language": "unknown",
+  "region": "England",
+  "period": "1701-1800",
+  "shelfmark": "Bodleian Library, MS. Carte 212",
+  "folio_note": "volume of copies and breviates",
+  "cls": "B",
+  "status": "Bodleian description: 'partly deciphered'. Bodleian Archives site is behind an Anubis bot wall; record read via Discovery only. Not on DECODE.",
+  "why": "Stuart court correspondence in a substitution code.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Check Bodleian Digital; ask Special Collections.",
+  "links": [
+   {
+    "label": "Discovery record (Bodleian)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/42efe2bc-7d8f-4c5e-b26c-763ce81b1bcb"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1693,
+  "date": "19 Apr 1693 - 28 Mar 1695",
+  "title": "Nairne collection: several ciphers among the papers (fols. 3, 10v, 21, 25)",
+  "correspondents": "Jacobite correspondents (Nairne collection)",
+  "place": "unknown",
+  "language": "unknown",
+  "region": "England",
+  "period": "1651-1700",
+  "shelfmark": "Bodleian Library, MS. Carte 256 fols. 3, 10v, 21, 25",
+  "folio_note": "4 cipher passages",
+  "cls": "C",
+  "status": "Bodleian description only. Not on DECODE.",
+  "why": "Jacobite cipher traffic 1693-95.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "View the volume; compare with Carte 212.",
+  "links": [
+   {
+    "label": "Discovery record (Bodleian)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/6fa8ff66-4e65-40c7-a901-1b9fd2f1fd0f"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1600,
+  "date": "21 Nov / 1 Dec 1600",
+  "title": "George Kendall to Cecil, in cipher",
+  "correspondents": "George Kendall to Robert Cecil",
+  "place": "Flanders",
+  "language": "English",
+  "region": "England",
+  "period": "1598-1610",
+  "shelfmark": "TNA SP 77/6/229",
+  "folio_note": "f. 229",
+  "cls": "C",
+  "status": "Catalogue: '(in cipher)'; no decipherment noted. Not digitised.",
+  "why": "Cecil's Flemish intelligence at the Nieuport time.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Compare with Cecil keys (Hatfield CP).",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C7966108"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1803,
+  "date": "1803-1804",
+  "title": "Drake of Colyton papers: letters in cypher (Jackson, Wynne, Hill enclosure) to Francis Drake",
+  "correspondents": "Jackson / Henry Wynne / W. Hill to Francis Drake (envoy at Munich)",
+  "place": "Karlsbad and elsewhere",
+  "language": "unknown",
+  "region": "Central Europe",
+  "period": "1801-1900",
+  "shelfmark": "Devon Archives (South West Heritage Trust), 1700m-0/C/P/661, /674, /701",
+  "folio_note": "3 letters; /83 is a c.1709 copy 'Cypher letters' to Godolphin",
+  "cls": "C",
+  "status": "Catalogue only; no decipherment noted. Not on DECODE.",
+  "why": "Drake's Munich intrigue of 1804.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Ask Devon Heritage Centre for images.",
+  "links": [
+   {
+    "label": "Discovery record (Devon)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/4f11b618-bde5-4575-a9e9-98c1374a288d"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1794,
+  "date": "1794-1795",
+  "title": "Simcoe papers: cipher letters relating to North America",
+  "correspondents": "unknown (Simcoe circle)",
+  "place": "unknown",
+  "language": "English",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "Devon Archives, 1038 M/O/5/1-3",
+  "folio_note": "3 items",
+  "cls": "C",
+  "status": "Catalogue: 'Cipher letters relating to North America'. Not on DECODE. The Clements Library also holds Simcoe papers.",
+  "why": "Upper Canada governor's secret traffic.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Request images.",
+  "links": [
+   {
+    "label": "Discovery record (Devon)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/4461f498-2047-4d13-8384-7d515a215310"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1642,
+  "date": "20/30 Sep 1642",
+  "title": "French letter entirely in cipher",
+  "correspondents": "unknown",
+  "place": "France",
+  "language": "French",
+  "region": "France",
+  "period": "1611-1650",
+  "shelfmark": "TNA SP 78/111/93 (f. 212)",
+  "folio_note": "1 letter, entirely cipher",
+  "cls": "C",
+  "status": "Catalogue: 'Letter entirely in cipher'. Flagged in research/oldest/hard_targets.md but not in catalogue.json. Not digitised.",
+  "why": "Civil War year French letter.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Obtain image.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C7327886"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1656,
+  "date": "18 Jul 1656",
+  "title": "Letter in cipher (or shorthand), Holland",
+  "correspondents": "unknown",
+  "place": "Holland",
+  "language": "unknown",
+  "region": "Low Countries",
+  "period": "1651-1700",
+  "shelfmark": "TNA SP 84/161/66 (f. 169)",
+  "folio_note": "1 folio",
+  "cls": "C",
+  "status": "Catalogue only. Not digitised.",
+  "why": "Commonwealth-period intercept.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Obtain image.",
+  "links": [
+   {
+    "label": "TNA Discovery record",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/C7306137"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1879,
+  "date": "May-Jun 1879",
+  "title": "Zulu War cipher telegrams (Fort Pearson, Crealock) in the Templer Study Centre; one Boer War telegram 'not deciphered'",
+  "correspondents": "Pearson, Crealock to Military Secretary",
+  "place": "Fort Pearson, Natal",
+  "language": "English",
+  "region": "Other",
+  "period": "1801-1900",
+  "shelfmark": "National Army Museum, 6807/386/13/42, 6807/386/15/9, 6807/386/15/16; 6807/386/7/53",
+  "folio_note": "several telegrams",
+  "cls": "C",
+  "status": "Catalogue only; field codes. 7/53 is 'not deciphered'.",
+  "why": "Prince Imperial's death week.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Ask the NAM.",
+  "links": [
+   {
+    "label": "Discovery search",
+    "href": "https://discovery.nationalarchives.gov.uk/results/r?_q=cipher%20telegram%20Fort%20Pearson"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ },
+ {
+  "year": 1791,
+  "date": "28 Mar 1791",
+  "title": "Boulton family: letter 'entirely in secret writing' (No. 11)",
+  "correspondents": "Matthew Boulton circle",
+  "place": "Birmingham",
+  "language": "unknown",
+  "region": "England",
+  "period": "1701-1800",
+  "shelfmark": "Birmingham Archives, MS 3782/12/91/127",
+  "folio_note": "1 letter",
+  "cls": "C",
+  "status": "Catalogue only; a letter of 1765 (MS 3782/12/60/19) explains a vowel-number cipher, possibly the same habit.",
+  "why": "French coinage business; low value.",
+  "importance": 1,
+  "solvability": 3,
+  "difficulty": 1,
+  "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+  "verify": "Check the 1765 letter for the key.",
+  "links": [
+   {
+    "label": "Discovery record (Birmingham)",
+    "href": "https://discovery.nationalarchives.gov.uk/details/r/ddcb34b0-9d75-4409-9d40-2a558a8b7187"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "UK archives sweep (TNA Discovery)",
+  "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+  "access": "archive"
+ }
+]

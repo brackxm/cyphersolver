@@ -1,0 +1,1438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en" class="no-js">
+
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1 , user-scalable=yes">
+    <meta name="description" content="onb_digital">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:title" content=" ÖNB Digital" />
+    <meta property="og:image" content="https://onb.digital/items/frontend/img/logo/onb_logo_550_550.png" />
+    <meta property="og:type" content="website " />
+    <meta property="og:url" content="https://onb.digital/ " />
+    <meta property="og:site_name" content="ÖNB Digital " />
+    <meta property="og:description" content="<br> <br> In diesem Portal finden Sie die digitalen Bestände der Österreichischen Nationalbibliothek: Bücher, Fotografien, Grafiken und vieles mehr.  <br><br>" />
+
+    <title>ÖNB Digital</title>
+
+    <link rel="stylesheet" type="text/css" href="https://onb.digital/items/general/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://onb.digital/items/frontend/css/jquery-ui.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://onb.digital/items/frontend/css/controls.css?ver=2" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://onb.digital/items/frontend/css/navbar.css?ver=4" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://onb.digital/items/frontend/css/desktop.css?ver=3" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://onb.digital/items/frontend/css/lightbox.css?ver=3" media="all" />
+
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="https://onb.digital/items/frontend/img/favicon.ico">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:100,300,700&display=swap" rel="stylesheet">
+
+    <!-- customised global js  -->
+    <script>
+        
+        function unescapeHtml(text) {
+            var map = {
+                '&amp;': '&',
+                '&lt;': '<',
+                '&gt;': '>',
+                '&quot;': '"',
+                "&#039;": "'"
+            };
+
+            return text.replace(/[&<>"']/g, function(m) {
+                return map[m];
+            });
+        }
+
+        var rootUrl = "https://onb.digital/";
+        var ready_query = false;
+        var translations_array = {};
+
+                    translations_array['aar'] = 'Danakil-Sprache';
+                    translations_array['abk'] = 'Abchasisch';
+                    translations_array['ace'] = 'Aceh-Sprache';
+                    translations_array['ach'] = 'Acholi-Sprache';
+                    translations_array['ada'] = 'Adangme-Sprache';
+                    translations_array['ady'] = 'Adygisch';
+                    translations_array['afa'] = 'Hamitosemitische+Sprachen';
+                    translations_array['afh'] = 'Afrihili';
+                    translations_array['afr'] = 'Afrikaans';
+                    translations_array['ain'] = 'Ainu-Sprache';
+                    translations_array['aka'] = 'Akan-Sprache';
+                    translations_array['akk'] = 'Akkadisch';
+                    translations_array['alb'] = 'Albanisch';
+                    translations_array['ale'] = 'Aleutisch';
+                    translations_array['alg'] = 'Algonkin-Sprachen+';
+                    translations_array['alt'] = 'Altaisch';
+                    translations_array['amh'] = 'Amharisch';
+                    translations_array['ang'] = 'Altenglisch';
+                    translations_array['anp'] = 'Anga-Sprache';
+                    translations_array['apa'] = 'Apachen-Sprachen';
+                    translations_array['ara'] = 'Arabisch';
+                    translations_array['arc'] = 'Aram%C3%A4isch';
+                    translations_array['arg'] = 'Aragonesisch';
+                    translations_array['arm'] = 'Armenisch';
+                    translations_array['arn'] = 'Arauka-Sprachen';
+                    translations_array['arp'] = 'Arapaho-Sprache';
+                    translations_array['art'] = 'Kunstsprachen+';
+                    translations_array['arw'] = 'Arawak-Sprachen';
+                    translations_array['asm'] = 'Assamesisch';
+                    translations_array['ast'] = 'Asturisch';
+                    translations_array['ath'] = 'Athapaskische+Sprachen+';
+                    translations_array['aus'] = 'Australische+Sprachen';
+                    translations_array['ava'] = 'Awarisch';
+                    translations_array['ave'] = 'Avestisch';
+                    translations_array['awa'] = 'Awadhi';
+                    translations_array['aym'] = 'Aymar%C3%A1-Sprache';
+                    translations_array['aze'] = 'Aserbeidschanisch';
+                    translations_array['bad'] = 'Banda-Sprachen+%3CUbangi-Sprachen%3E';
+                    translations_array['bai'] = 'Bamileke-Sprachen';
+                    translations_array['bak'] = 'Baschkirisch';
+                    translations_array['bal'] = 'Belutschisch';
+                    translations_array['bam'] = 'Bambara-Sprache';
+                    translations_array['ban'] = 'Balinesisch';
+                    translations_array['baq'] = 'Baskisch';
+                    translations_array['bas'] = 'Basaa-Sprache';
+                    translations_array['bat'] = 'Baltische+Sprachen+';
+                    translations_array['bej'] = 'Bedauye';
+                    translations_array['bel'] = 'Wei%C3%9Frussisch';
+                    translations_array['bem'] = 'Bemba-Sprache';
+                    translations_array['ben'] = 'Bengali';
+                    translations_array['ber'] = 'Berbersprachen+';
+                    translations_array['bho'] = 'Bhojpuri';
+                    translations_array['bih'] = 'Bihari+';
+                    translations_array['bik'] = 'Bikol-Sprache';
+                    translations_array['bin'] = 'Edo-Sprache';
+                    translations_array['bis'] = 'Beach-la-mar';
+                    translations_array['bla'] = 'Blackfoot-Sprache';
+                    translations_array['bnt'] = 'Bantusprachen+';
+                    translations_array['bos'] = 'Bosnisch';
+                    translations_array['bra'] = 'Braj-Bhakha';
+                    translations_array['bre'] = 'Bretonisch';
+                    translations_array['btk'] = 'Batak-Sprache';
+                    translations_array['bua'] = 'Burjatisch';
+                    translations_array['bug'] = 'Bugi-Sprache';
+                    translations_array['bul'] = 'Bulgarisch';
+                    translations_array['bur'] = 'Birmanisch';
+                    translations_array['byn'] = 'Bilin-Sprache';
+                    translations_array['cad'] = 'Caddo-Sprachen';
+                    translations_array['cai'] = 'Indianersprachen%2C+Zentralamerika+';
+                    translations_array['car'] = 'Karibische+Sprachen';
+                    translations_array['cat'] = 'Katalanisch';
+                    translations_array['cau'] = 'Kaukasische+Sprachen+';
+                    translations_array['ceb'] = 'Cebuano';
+                    translations_array['cel'] = 'Keltische+Sprachen+';
+                    translations_array['cha'] = 'Chamorro-Sprache';
+                    translations_array['chb'] = 'Chibcha-Sprachen';
+                    translations_array['che'] = 'Tschetschenisch';
+                    translations_array['chg'] = 'Tschagataisch';
+                    translations_array['chi'] = 'Chinesisch';
+                    translations_array['chk'] = 'Trukesisch';
+                    translations_array['chm'] = 'Tscheremissisch';
+                    translations_array['chn'] = 'Chinook-Jargon';
+                    translations_array['cho'] = 'Choctaw-Sprache';
+                    translations_array['chp'] = 'Chipewyan-Sprache';
+                    translations_array['chr'] = 'Cherokee-Sprache';
+                    translations_array['chu'] = 'Kirchenslawisch';
+                    translations_array['chv'] = 'Tschuwaschisch';
+                    translations_array['chy'] = 'Cheyenne-Sprache';
+                    translations_array['cmc'] = 'Cham-Sprachen';
+                    translations_array['cop'] = 'Koptisch';
+                    translations_array['cor'] = 'Kornisch';
+                    translations_array['cos'] = 'Korsisch';
+                    translations_array['cpe'] = 'Kreolisch-Englisch+';
+                    translations_array['cpf'] = 'Kreolisch-Franz%C3%B6sisch+';
+                    translations_array['cpp'] = 'Kreolisch-Portugiesisch+';
+                    translations_array['cre'] = 'Cree-Sprache';
+                    translations_array['crh'] = 'Krimtatarisch';
+                    translations_array['crp'] = 'Kreolische+Sprachen%3B+Pidginsprachen+';
+                    translations_array['csb'] = 'Kaschubisch';
+                    translations_array['cus'] = 'Kuschitische+Sprachen+';
+                    translations_array['cze'] = 'Tschechisch';
+                    translations_array['dak'] = 'Dakota-Sprache';
+                    translations_array['dan'] = 'D%C3%A4nisch';
+                    translations_array['dar'] = 'Darginisch';
+                    translations_array['day'] = 'Dajakisch';
+                    translations_array['del'] = 'Delaware-Sprache';
+                    translations_array['den'] = 'Slave-Sprache';
+                    translations_array['dgr'] = 'Dogrib-Sprache';
+                    translations_array['din'] = 'Dinka-Sprache';
+                    translations_array['div'] = 'Maledivisch';
+                    translations_array['doi'] = 'Dogri';
+                    translations_array['dra'] = 'Drawidische+Sprachen+';
+                    translations_array['dsb'] = 'Niedersorbisch';
+                    translations_array['dua'] = 'Duala-Sprachen';
+                    translations_array['dum'] = 'Mittelniederl%C3%A4ndisch';
+                    translations_array['dut'] = 'Niederl%C3%A4ndisch';
+                    translations_array['dyu'] = 'Dyula-Sprache';
+                    translations_array['dzo'] = 'Dzongkha';
+                    translations_array['efi'] = 'Efik';
+                    translations_array['egy'] = '%C3%84gyptisch';
+                    translations_array['eka'] = 'Ekajuk';
+                    translations_array['elx'] = 'Elamisch';
+                    translations_array['eng'] = 'Englisch';
+                    translations_array['enm'] = 'Mittelenglisch';
+                    translations_array['epo'] = 'Esperanto';
+                    translations_array['est'] = 'Estnisch';
+                    translations_array['ewe'] = 'Ewe-Sprache';
+                    translations_array['ewo'] = 'Ewondo';
+                    translations_array['fan'] = 'Pangwe-Sprache';
+                    translations_array['fao'] = 'F%C3%A4r%C3%B6isch';
+                    translations_array['fat'] = 'Fante-Sprache';
+                    translations_array['fij'] = 'Fidschi-Sprache';
+                    translations_array['fil'] = 'Pilipino';
+                    translations_array['fin'] = 'Finnisch';
+                    translations_array['fiu'] = 'Finnougrische+Sprachen+';
+                    translations_array['fon'] = 'Fon-Sprache';
+                    translations_array['fre'] = 'Franz%C3%B6sisch';
+                    translations_array['frm'] = 'Mittelfranz%C3%B6sisch';
+                    translations_array['fro'] = 'Altfranz%C3%B6sisch';
+                    translations_array['frr'] = 'Nordfriesisch';
+                    translations_array['frs'] = 'Ostfriesisch';
+                    translations_array['fry'] = 'Friesisch';
+                    translations_array['ful'] = 'Ful';
+                    translations_array['fur'] = 'Friulisch';
+                    translations_array['gaa'] = 'Ga-Sprache';
+                    translations_array['gay'] = 'Gayo-Sprache';
+                    translations_array['gba'] = 'Gbaya-Sprache';
+                    translations_array['gem'] = 'Germanische+Sprachen+';
+                    translations_array['geo'] = 'Georgisch';
+                    translations_array['ger'] = 'Deutsch';
+                    translations_array['gez'] = 'Alt%C3%A4thiopisch';
+                    translations_array['gil'] = 'Gilbertesisch';
+                    translations_array['gla'] = 'G%C3%A4lisch-Schottisch';
+                    translations_array['gle'] = 'Irisch';
+                    translations_array['glg'] = 'Galicisch';
+                    translations_array['glv'] = 'Manx';
+                    translations_array['gmh'] = 'Mittelhochdeutsch';
+                    translations_array['goh'] = 'Althochdeutsch';
+                    translations_array['gon'] = 'Gondi-Sprache';
+                    translations_array['gor'] = 'Gorontalesisch';
+                    translations_array['got'] = 'Gotisch';
+                    translations_array['grb'] = 'Grebo-Sprache';
+                    translations_array['grc'] = 'Griechisch';
+                    translations_array['gre'] = 'Neugriechisch';
+                    translations_array['grn'] = 'Guaran%C3%AD-Sprache';
+                    translations_array['gsw'] = 'Schweizerdeutsch';
+                    translations_array['guj'] = 'Gujarati-Sprache';
+                    translations_array['gwi'] = 'Kutchin-Sprache';
+                    translations_array['hai'] = 'Haida-Sprache';
+                    translations_array['hat'] = 'Ha%C3%AFtien+%28Haiti-Kreolisch%29';
+                    translations_array['hau'] = 'Haussa-Sprache';
+                    translations_array['haw'] = 'Hawaiisch';
+                    translations_array['heb'] = 'Hebr%C3%A4isch';
+                    translations_array['her'] = 'Herero-Sprache';
+                    translations_array['hil'] = 'Hiligaynon-Sprache';
+                    translations_array['him'] = 'Himachali';
+                    translations_array['hin'] = 'Hindi';
+                    translations_array['hit'] = 'Hethitisch';
+                    translations_array['hmn'] = 'Miao-Sprachen';
+                    translations_array['hmo'] = 'Hiri-Motu';
+                    translations_array['hrv'] = 'Kroatisch';
+                    translations_array['hsb'] = 'Obersorbisch';
+                    translations_array['hun'] = 'Ungarisch';
+                    translations_array['hup'] = 'Hupa-Sprache';
+                    translations_array['iba'] = 'Iban-Sprache';
+                    translations_array['ibo'] = 'Ibo-Sprache';
+                    translations_array['ice'] = 'Isl%C3%A4ndisch';
+                    translations_array['ido'] = 'Ido';
+                    translations_array['iii'] = 'Lalo-Sprache';
+                    translations_array['ijo'] = 'Ijo-Sprache';
+                    translations_array['iku'] = 'Inuktitut';
+                    translations_array['ile'] = 'Interlingue';
+                    translations_array['ilo'] = 'Ilokano-Sprache';
+                    translations_array['ina'] = 'Interlingua';
+                    translations_array['inc'] = 'Indoarische+Sprachen+';
+                    translations_array['ind'] = 'Bahasa+Indonesia';
+                    translations_array['ine'] = 'Indogermanische+Sprachen+';
+                    translations_array['inh'] = 'Inguschisch';
+                    translations_array['ipk'] = 'Inupik';
+                    translations_array['ira'] = 'Iranische+Sprachen+';
+                    translations_array['iro'] = 'Irokesische+Sprachen';
+                    translations_array['ita'] = 'Italienisch';
+                    translations_array['jav'] = 'Javanisch';
+                    translations_array['jbo'] = 'Lojban';
+                    translations_array['jpn'] = 'Japanisch';
+                    translations_array['jpr'] = 'J%C3%BCdisch-Persisch';
+                    translations_array['jrb'] = 'J%C3%BCdisch-Arabisch';
+                    translations_array['kaa'] = 'Karakalpakisch';
+                    translations_array['kab'] = 'Kabylisch';
+                    translations_array['kac'] = 'Kachin-Sprache';
+                    translations_array['kal'] = 'Gr%C3%B6nl%C3%A4ndisch';
+                    translations_array['kam'] = 'Kamba-Sprache';
+                    translations_array['kan'] = 'Kannada';
+                    translations_array['kar'] = 'Karenisch';
+                    translations_array['kas'] = 'Kaschmiri';
+                    translations_array['kau'] = 'Kanuri-Sprache';
+                    translations_array['kaw'] = 'Kawi';
+                    translations_array['kaz'] = 'Kasachisch';
+                    translations_array['kbd'] = 'Kabardinisch';
+                    translations_array['kha'] = 'Khasi-Sprache';
+                    translations_array['khi'] = 'Khoisan-Sprachen+';
+                    translations_array['khm'] = 'Kambodschanisch';
+                    translations_array['kho'] = 'Sakisch';
+                    translations_array['kik'] = 'Kikuyu-Sprache';
+                    translations_array['kin'] = 'Rwanda-Sprache';
+                    translations_array['kir'] = 'Kirgisisch';
+                    translations_array['kmb'] = 'Kimbundu-Sprache';
+                    translations_array['kok'] = 'Konkani';
+                    translations_array['kom'] = 'Komi-Sprache';
+                    translations_array['kon'] = 'Kongo-Sprache';
+                    translations_array['kor'] = 'Koreanisch';
+                    translations_array['kos'] = 'Kosraeanisch';
+                    translations_array['kpe'] = 'Kpelle-Sprache';
+                    translations_array['krc'] = 'Karatschaiisch-Balkarisch';
+                    translations_array['krl'] = 'Karelisch';
+                    translations_array['kro'] = 'Kru-Sprachen+';
+                    translations_array['kru'] = 'Oraon-Sprache';
+                    translations_array['kua'] = 'Kwanyama-Sprache';
+                    translations_array['kum'] = 'Kum%C3%BCkisch';
+                    translations_array['kur'] = 'Kurdisch';
+                    translations_array['kut'] = 'Kutenai-Sprache';
+                    translations_array['lad'] = 'Judenspanisch';
+                    translations_array['lah'] = 'Lahnda';
+                    translations_array['lam'] = 'Lamba-Sprache+%3CBantusprache%3E';
+                    translations_array['lao'] = 'Laotisch';
+                    translations_array['lat'] = 'Latein';
+                    translations_array['lav'] = 'Lettisch';
+                    translations_array['lez'] = 'Lesgisch';
+                    translations_array['lim'] = 'Limburgisch';
+                    translations_array['lin'] = 'Lingala';
+                    translations_array['lit'] = 'Litauisch';
+                    translations_array['lol'] = 'Mongo-Sprache';
+                    translations_array['loz'] = 'Rotse-Sprache';
+                    translations_array['ltz'] = 'Luxemburgisch';
+                    translations_array['lua'] = 'Lulua-Sprache';
+                    translations_array['lub'] = 'Luba-Katanga-Sprache';
+                    translations_array['lug'] = 'Ganda-Sprache';
+                    translations_array['lui'] = 'Luise%C3%B1o-Sprache';
+                    translations_array['lun'] = 'Lunda-Sprache';
+                    translations_array['luo'] = 'Luo-Sprache';
+                    translations_array['lus'] = 'Lushai-Sprache';
+                    translations_array['mac'] = 'Makedonisch';
+                    translations_array['mad'] = 'Maduresisch';
+                    translations_array['mag'] = 'Khotta';
+                    translations_array['mah'] = 'Marschallesisch';
+                    translations_array['mai'] = 'Maithili';
+                    translations_array['mak'] = 'Makassarisch';
+                    translations_array['mal'] = 'Malayalam';
+                    translations_array['man'] = 'Malinke-Sprache';
+                    translations_array['mao'] = 'Maori-Sprache';
+                    translations_array['mar'] = 'Marathi';
+                    translations_array['mas'] = 'Massai-Sprache';
+                    translations_array['may'] = 'Malaiisch';
+                    translations_array['mdf'] = 'Mokscha-Sprache';
+                    translations_array['mdr'] = 'Mandaresisch';
+                    translations_array['men'] = 'Mende-Sprache';
+                    translations_array['mga'] = 'Mittelirisch';
+                    translations_array['mic'] = 'Micmac-Sprache';
+                    translations_array['min'] = 'Minangkabau-Sprache';
+                    translations_array['mis'] = 'Einzelne+andere+Sprachen';
+                    translations_array['mkh'] = 'Mon-Khmer-Sprachen+';
+                    translations_array['mlg'] = 'Malagassi-Sprache';
+                    translations_array['mlt'] = 'Maltesisch';
+                    translations_array['mnc'] = 'Mandschurisch';
+                    translations_array['mni'] = 'Meithei-Sprache';
+                    translations_array['mno'] = 'Manobo-Sprachen';
+                    translations_array['moh'] = 'Mohawk-Sprache';
+                    translations_array['mon'] = 'Mongolisch';
+                    translations_array['mos'] = 'Mossi-Sprache';
+                    translations_array['mul'] = 'Mehrere+Sprachen';
+                    translations_array['mun'] = 'Mundasprachen+';
+                    translations_array['mus'] = 'Muskogisch';
+                    translations_array['mwl'] = 'Mirandesisch';
+                    translations_array['mwr'] = 'Marwari';
+                    translations_array['myn'] = 'Maya-Sprachen';
+                    translations_array['myv'] = 'Erza-Mordwinisch';
+                    translations_array['nah'] = 'Nahuatl';
+                    translations_array['nai'] = 'Indianersprachen%2C+Nordamerika+';
+                    translations_array['nap'] = 'Neapel+%2F+Mundart';
+                    translations_array['nau'] = 'Nauruanisch';
+                    translations_array['nav'] = 'Navajo-Sprache';
+                    translations_array['nbl'] = 'Ndebele-Sprache+%3CTransvaal%3E';
+                    translations_array['nde'] = 'Ndebele-Sprache+%3CSimbabwe%3E';
+                    translations_array['ndo'] = 'Ndonga';
+                    translations_array['nds'] = 'Niederdeutsch';
+                    translations_array['nep'] = 'Nepali';
+                    translations_array['new'] = 'Newari';
+                    translations_array['nia'] = 'Nias-Sprache';
+                    translations_array['nic'] = 'Nigerkordofanische+Sprachen+';
+                    translations_array['niu'] = 'Niue-Sprache';
+                    translations_array['nno'] = 'Nynorsk';
+                    translations_array['nob'] = 'Bokm%C3%A5l';
+                    translations_array['nog'] = 'Nogaisch';
+                    translations_array['non'] = 'Altnorwegisch';
+                    translations_array['nor'] = 'Norwegisch';
+                    translations_array['nqo'] = 'N%27Ko';
+                    translations_array['nso'] = 'Pedi-Sprache';
+                    translations_array['nub'] = 'Nubische+Sprachen';
+                    translations_array['nwc'] = 'Alt-Newari';
+                    translations_array['nya'] = 'Nyanja-Sprache';
+                    translations_array['nym'] = 'Nyamwezi-Sprache';
+                    translations_array['nyn'] = 'Nkole-Sprache';
+                    translations_array['nyo'] = 'Nyoro-Sprache';
+                    translations_array['nzi'] = 'Nzima-Sprache';
+                    translations_array['oci'] = 'Okzitanisch';
+                    translations_array['oji'] = 'Ojibwa-Sprache';
+                    translations_array['ori'] = 'Oriya-Sprache';
+                    translations_array['orm'] = 'Galla-Sprache';
+                    translations_array['osa'] = 'Osage-Sprache';
+                    translations_array['oss'] = 'Ossetisch';
+                    translations_array['ota'] = 'Osmanisch';
+                    translations_array['oto'] = 'Otomangue-Sprachen';
+                    translations_array['paa'] = 'Papuasprachen+';
+                    translations_array['pag'] = 'Pangasinan-Sprache';
+                    translations_array['pal'] = 'Mittelpersisch';
+                    translations_array['pam'] = 'Pampanggan-Sprache';
+                    translations_array['pan'] = 'Pandschabi-Sprache';
+                    translations_array['pap'] = 'Papiamento';
+                    translations_array['pau'] = 'Palau-Sprache';
+                    translations_array['peo'] = 'Altpersisch';
+                    translations_array['per'] = 'Persisch';
+                    translations_array['phi'] = 'Philippinisch-Austronesisch+';
+                    translations_array['phn'] = 'Ph%C3%B6nikisch';
+                    translations_array['pli'] = 'Pali';
+                    translations_array['pol'] = 'Polnisch';
+                    translations_array['pon'] = 'Ponapeanisch';
+                    translations_array['por'] = 'Portugiesisch';
+                    translations_array['pra'] = 'Prakrit';
+                    translations_array['pro'] = 'Altokzitanisch';
+                    translations_array['pus'] = 'Paschtu';
+                    translations_array['que'] = 'Quechua-Sprache';
+                    translations_array['raj'] = 'Rajasthani';
+                    translations_array['rap'] = 'Osterinsel-Sprache';
+                    translations_array['rar'] = 'Rarotonganisch';
+                    translations_array['roa'] = 'Romanische+Sprachen+';
+                    translations_array['roh'] = 'R%C3%A4toromanisch';
+                    translations_array['rom'] = 'Romani+%3CSprache%3E';
+                    translations_array['rum'] = 'Rum%C3%A4nisch';
+                    translations_array['run'] = 'Rundi-Sprache';
+                    translations_array['rup'] = 'Aromunisch';
+                    translations_array['rus'] = 'Russisch';
+                    translations_array['sad'] = 'Sandawe-Sprache';
+                    translations_array['sag'] = 'Sango-Sprache';
+                    translations_array['sah'] = 'Jakutisch';
+                    translations_array['sai'] = 'Indianersprachen%2C+S%C3%BCdamerika+';
+                    translations_array['sal'] = 'Salish-Sprache';
+                    translations_array['sam'] = 'Samaritanisch';
+                    translations_array['san'] = 'Sanskrit';
+                    translations_array['sas'] = 'Sasak';
+                    translations_array['sat'] = 'Santali';
+                    translations_array['scn'] = 'Sizilianisch';
+                    translations_array['sco'] = 'Schottisch';
+                    translations_array['sel'] = 'Selkupisch';
+                    translations_array['sem'] = 'Semitische+Sprachen+';
+                    translations_array['sga'] = 'Altirisch';
+                    translations_array['sgn'] = 'Zeichensprachen';
+                    translations_array['shn'] = 'Schan-Sprache';
+                    translations_array['sid'] = 'Sidamo-Sprache';
+                    translations_array['sin'] = 'Singhalesisch';
+                    translations_array['sio'] = 'Sioux-Sprachen+';
+                    translations_array['sit'] = 'Sinotibetische+Sprachen+';
+                    translations_array['sla'] = 'Slawische+Sprachen+';
+                    translations_array['slo'] = 'Slowakisch';
+                    translations_array['slv'] = 'Slowenisch';
+                    translations_array['sma'] = 'S%C3%BCdsaamisch';
+                    translations_array['sme'] = 'Nordsaamisch';
+                    translations_array['smi'] = 'Saamisch';
+                    translations_array['smj'] = 'Lulesaamisch';
+                    translations_array['smn'] = 'Inarisaamisch';
+                    translations_array['smo'] = 'Samoanisch';
+                    translations_array['sms'] = 'Skoltsaamisch';
+                    translations_array['sna'] = 'Schona-Sprache';
+                    translations_array['snd'] = 'Sindhi-Sprache';
+                    translations_array['snk'] = 'Soninke-Sprache';
+                    translations_array['sog'] = 'Sogdisch';
+                    translations_array['som'] = 'Somali';
+                    translations_array['son'] = 'Songhai-Sprache';
+                    translations_array['sot'] = 'S%C3%BCd-Sotho-Sprache';
+                    translations_array['spa'] = 'Spanisch';
+                    translations_array['srd'] = 'Sardisch';
+                    translations_array['srn'] = 'Sranantongo';
+                    translations_array['srp'] = 'Serbisch';
+                    translations_array['srr'] = 'Serer-Sprache';
+                    translations_array['ssa'] = 'Nilosaharanische+Sprachen+';
+                    translations_array['ssw'] = 'Swasi-Sprache';
+                    translations_array['suk'] = 'Sukuma-Sprache';
+                    translations_array['sun'] = 'Sundanesisch';
+                    translations_array['sus'] = 'Susu';
+                    translations_array['sux'] = 'Sumerisch';
+                    translations_array['swa'] = 'Swahili';
+                    translations_array['swe'] = 'Schwedisch';
+                    translations_array['syc'] = 'Syrisch';
+                    translations_array['syr'] = 'Neuostaram%C3%A4isch';
+                    translations_array['tah'] = 'Tahitisch';
+                    translations_array['tai'] = 'Thaisprachen+';
+                    translations_array['tam'] = 'Tamil';
+                    translations_array['tat'] = 'Tatarisch';
+                    translations_array['tel'] = 'Telugu-Sprache';
+                    translations_array['tem'] = 'Temne-Sprache';
+                    translations_array['ter'] = 'Tereno-Sprache';
+                    translations_array['tet'] = 'Tetum-Sprache';
+                    translations_array['tgk'] = 'Tadschikisch';
+                    translations_array['tgl'] = 'Tagalog';
+                    translations_array['tha'] = 'Thail%C3%A4ndisch';
+                    translations_array['tib'] = 'Tibetisch';
+                    translations_array['tig'] = 'Tigre-Sprache';
+                    translations_array['tir'] = 'Tigrinja-Sprache';
+                    translations_array['tiv'] = 'Tiv-Sprache';
+                    translations_array['tkl'] = 'Tokelauanisch';
+                    translations_array['tlh'] = 'Klingonisch';
+                    translations_array['tli'] = 'Tlingit-Sprache';
+                    translations_array['tmh'] = 'Tama%C5%A1eq';
+                    translations_array['tog'] = 'Tonga+%3CBantusprache%2C+Sambia%3E';
+                    translations_array['ton'] = 'Tongaisch';
+                    translations_array['tpi'] = 'Neumelanesisch';
+                    translations_array['tsi'] = 'Tsimshian-Sprache';
+                    translations_array['tsn'] = 'Tswana-Sprache';
+                    translations_array['tso'] = 'Tsonga-Sprache';
+                    translations_array['tuk'] = 'Turkmenisch';
+                    translations_array['tum'] = 'Tumbuka-Sprache';
+                    translations_array['tup'] = 'Tupi-Sprache';
+                    translations_array['tur'] = 'T%C3%BCrkisch';
+                    translations_array['tut'] = 'Altaische+Sprachen+';
+                    translations_array['tvl'] = 'Elliceanisch';
+                    translations_array['twi'] = 'Twi-Sprache';
+                    translations_array['tyv'] = 'Tuwinisch';
+                    translations_array['udm'] = 'Udmurtisch';
+                    translations_array['uga'] = 'Ugaritisch';
+                    translations_array['uig'] = 'Uigurisch';
+                    translations_array['ukr'] = 'Ukrainisch';
+                    translations_array['umb'] = 'Mbundu-Sprache';
+                    translations_array['und'] = 'Nicht+zu+entscheiden';
+                    translations_array['urd'] = 'Urdu';
+                    translations_array['uzb'] = 'Usbekisch';
+                    translations_array['vai'] = 'Vai-Sprache';
+                    translations_array['ven'] = 'Venda-Sprache';
+                    translations_array['vie'] = 'Vietnamesisch';
+                    translations_array['vol'] = 'Volap%C3%BCk';
+                    translations_array['vot'] = 'Wotisch';
+                    translations_array['wak'] = 'Wakash-Sprachen';
+                    translations_array['wal'] = 'Walamo-Sprache';
+                    translations_array['war'] = 'Waray';
+                    translations_array['was'] = 'Washo-Sprache';
+                    translations_array['wel'] = 'Kymrisch';
+                    translations_array['wen'] = 'Sorbisch+';
+                    translations_array['wln'] = 'Wallonisch';
+                    translations_array['wol'] = 'Wolof-Sprache';
+                    translations_array['xal'] = 'Kalm%C3%BCckisch';
+                    translations_array['xho'] = 'Xhosa-Sprache';
+                    translations_array['yao'] = 'Yao-Sprache+%3CBantusprache%3E';
+                    translations_array['yid'] = 'Jiddisch';
+                    translations_array['yor'] = 'Yoruba-Sprache';
+                    translations_array['ypk'] = 'Ypik-Sprachen';
+                    translations_array['zap'] = 'Zapotekisch';
+                    translations_array['zbl'] = 'Bliss-Symbol';
+                    translations_array['zen'] = 'Zenaga';
+                    translations_array['zha'] = 'Zhuang';
+                    translations_array['znd'] = 'Zande-Sprachen';
+                    translations_array['zul'] = 'Zulu-Sprache';
+                    translations_array['zun'] = 'Zu%C3%B1i-Sprache';
+                    translations_array['zxx'] = 'Kein+linguistischer+Inhalt';
+                    translations_array['zza'] = 'Zazaisch';
+                    translations_array['date_facet'] = 'Erschei-nungsjahr';
+                    translations_array['Code'] = 'Deutsch';
+                    translations_array['ARTICLE'] = 'Artikel';
+                    translations_array['ARTORIG'] = 'Kunstoriginal';
+                    translations_array['ARTREPRO'] = 'Kunstreproduktion';
+                    translations_array['ATLAS'] = 'Atlas';
+                    translations_array['AUDIOBOOK'] = 'H%C3%B6rbuch';
+                    translations_array['AUDIOCASSETTE'] = 'Audio-Kassette';
+                    translations_array['AUDIORECORDER'] = 'Audiorekorder';
+                    translations_array['BACHLORTHESIS'] = 'Bachelorarbeit';
+                    translations_array['BGBL'] = 'Bundesgesetzblatt';
+                    translations_array['BLURAY'] = 'Blu-Ray';
+                    translations_array['BLURAYDVD'] = 'Blu-Ray+und+DVD';
+                    translations_array['BOOK'] = 'Buch';
+                    translations_array['BOX'] = 'Box';
+                    translations_array['CALC'] = 'Rechner';
+                    translations_array['CAMERA'] = 'Kamera';
+                    translations_array['CAMRECORDER'] = 'Camcorder';
+                    translations_array['CASE'] = 'Beh%C3%A4lter';
+                    translations_array['CD'] = 'CD';
+                    translations_array['CDROM'] = 'CD-ROM';
+                    translations_array['CHARG'] = 'Laptop-Ladeger%C3%A4t';
+                    translations_array['CHART'] = 'Schaubild';
+                    translations_array['DAT'] = 'DAT+%28Digitales+Audioband%29';
+                    translations_array['DIORAMA'] = 'Diorama';
+                    translations_array['DISK'] = 'Computer-Disk';
+                    translations_array['DVD'] = 'DVD';
+                    translations_array['DVDRM'] = 'DVD-ROM';
+                    translations_array['EBOOK'] = 'eBook';
+                    translations_array['EDISS'] = 'Elektronische+Dissertation';
+                    translations_array['EJOURNAL'] = 'Elektronisches+Journal';
+                    translations_array['EPHEMERA'] = 'Ephemera';
+                    translations_array['EQUIP'] = 'Ger%C3%A4t';
+                    translations_array['EREADER'] = 'E-Reader';
+                    translations_array['EYEARBOOK'] = 'Elektronisches+Jahrbuch';
+                    translations_array['FICHE'] = 'Mikrofiche';
+                    translations_array['FILM'] = 'Mikrofilm';
+                    translations_array['FILMREEL'] = 'Filmrolle';
+                    translations_array['FILMSTRIP'] = 'Filmstreifen';
+                    translations_array['FLASHCARD'] = 'Flashkarte';
+                    translations_array['FLIPV'] = 'Flip-Videokamera';
+                    translations_array['FLOPPY_DISK'] = 'Diskette';
+                    translations_array['FSADT'] = 'Flachbildschirm-Adapter';
+                    translations_array['GAME'] = 'Spiel';
+                    translations_array['GLOBE'] = 'Globus';
+                    translations_array['GRAPHIC'] = 'Grafik';
+                    translations_array['HEAD'] = 'Kopfh%C3%B6rer';
+                    translations_array['IPAD'] = 'iPad';
+                    translations_array['ISSBD'] = 'Gebundene+Ausgabe';
+                    translations_array['ISSUE'] = 'Heft';
+                    translations_array['ITEM_WITH_AUDIO_CASSETTE'] = 'Exemplar+mit+Audiokassette';
+                    translations_array['ITEM_WITH_CD'] = 'Exemplar+mit+CD';
+                    translations_array['ITEM_WITH_FLOPPY_DISK'] = 'Exemplar+mit+Diskette';
+                    translations_array['KEYS'] = 'Schl%C3%BCssel';
+                    translations_array['KIT'] = 'Satz';
+                    translations_array['LAPTOPACCESSORY'] = 'Laptop-Zubeh%C3%B6r';
+                    translations_array['LETTER'] = 'Brief';
+                    translations_array['LGBL'] = 'Landesgesetzblatt';
+                    translations_array['LOOSELEAF'] = 'Loseblatt';
+                    translations_array['LP'] = 'LP';
+                    translations_array['LPTOP'] = 'Laptop';
+                    translations_array['LRDSC'] = 'Laserdisk';
+                    translations_array['MANUSCRIPT'] = 'Manuskript';
+                    translations_array['MAP'] = 'Karte';
+                    translations_array['MASTERTHESIS'] = 'Magisterarbeit';
+                    translations_array['MICROCARD'] = 'Mikrokarte';
+                    translations_array['MICROFICHE_MASTER'] = 'Mikrofiche-Master';
+                    translations_array['MICROFORM'] = 'Mikroform';
+                    translations_array['MICROOPAQUE'] = 'Mikro-Opak';
+                    translations_array['MICROSLIDE'] = 'Mikroskopfolie';
+                    translations_array['MIXED'] = 'Gemischtes+Material';
+                    translations_array['MMFILM'] = '16+mm+Film';
+                    translations_array['MOBILEDEVICE'] = 'Mobilger%C3%A4t';
+                    translations_array['MODEL'] = 'Modell';
+                    translations_array['MOTIONPICTURE'] = 'Spielfilm';
+                    translations_array['NEWSPAPER'] = 'Zeitung';
+                    translations_array['OTHERVM'] = 'Anderes+Bildmaterial';
+                    translations_array['OVERSIZE'] = '%C3%9Cbergr%C3%B6%C3%9Fe';
+                    translations_array['OVERSIZESCORE'] = '%C3%9Cbergr%C3%B6%C3%9Fe+Partitur';
+                    translations_array['PAMPHLET'] = 'Brosch%C3%BCre';
+                    translations_array['PHDTHESIS'] = 'Doktorarbeit';
+                    translations_array['PHONODISC'] = 'Aufnahme+%28Phonodisc%29';
+                    translations_array['PHOTOGRAPH'] = 'Fotografie';
+                    translations_array['PICTURE'] = 'Bild';
+                    translations_array['PLAYAWAY'] = 'Playaway';
+                    translations_array['POSTCARD'] = 'Postkarte';
+                    translations_array['PROJECTOR'] = 'Projektor';
+                    translations_array['REALIA'] = 'Realien';
+                    translations_array['RECORD'] = 'Tonaufnahme';
+                    translations_array['ROOM'] = 'Raum';
+                    translations_array['SCORE'] = 'Noten';
+                    translations_array['SLIDE'] = 'Dia';
+                    translations_array['SPECIALTHESIS'] = 'Spezielle+Dissertation';
+                    translations_array['TABLET'] = 'Tablet';
+                    translations_array['TECHDRAWING'] = 'Technische+Zeichnung';
+                    translations_array['THESIS'] = 'Abschlussarbeit';
+                    translations_array['TOY'] = 'Spielzeug';
+                    translations_array['TRANSPARENCY'] = 'Transparenz';
+                    translations_array['UNKNOWN'] = 'Unbekannt';
+                    translations_array['UNKNOWN+%28EPUB%29'] = 'Elektronische+Publikation';
+                    translations_array['VIDEOCASSETTE'] = 'Videokassette';
+                    translations_array['VIDEODISC'] = 'Video-CD';
+                    translations_array['VIDEOGAME'] = 'Videospiel';
+                    translations_array['VRECORD'] = 'Videoaufnahme';
+                    translations_array['VRECORD_OTHER'] = 'Videoaufnahme+%28andere%29';
+                    translations_array['licenseURL'] = 'Lizenz';
+                    translations_array['personStore'] = 'Person';
+                    translations_array['language'] = 'Sprache';
+                    translations_array['subject_facet'] = 'Thema';
+                    translations_array['publisherStore'] = 'Verlag';
+                    translations_array['TEXT'] = 'Text';
+                    translations_array['IMAGE'] = 'Bild';
+                    translations_array['AUDIO'] = 'Audio';
+                    translations_array['OTHER'] = 'Sonstige';
+                    translations_array['catalogUrl'] = 'Zum+Katalog';
+                    translations_array['category'] = 'Kategorie';
+                    translations_array['contentInformation'] = 'Beschreibung';
+                    translations_array['languages'] = 'Sprache';
+                    translations_array['mediatype'] = 'Medientyp';
+                    translations_array['openUrl'] = '%C3%96ffnen';
+                    translations_array['persons'] = 'Person';
+                    translations_array['placeOfPublication'] = 'Ort';
+                    translations_array['publisher'] = 'Verlag';
+                    translations_array['rightsInfo'] = '%22Rechteinhaber+Lizenz%22';
+                    translations_array['subjects'] = 'Schlagwort';
+                    translations_array['title'] = 'Titel';
+                    translations_array['yearOfPublication'] = 'Datierung';
+                    translations_array['RARE'] = 'Papyrus';
+                    translations_array['GOVRECORD'] = 'Beh%C3%B6rdliches+Dokument';
+                    translations_array['HDG'] = 'Haus+der+Geschichte+%C3%96sterreich';
+                    translations_array['AOEV'] = 'Archiv+des+%C3%96sterreichischen+Volksliedwerkes';
+                    translations_array['POSTER'] = 'Plakat';
+                    translations_array['ADDITIONAL2'] = 'Exlibris';
+                    translations_array['ADDITIONAL5'] = 'Musikhandschrift';
+                    translations_array['hbs'] = 'Serbokroatisch';
+        
+        // translation
+
+        function translate_this(word) {
+            var word = escapeHtml(word);
+            console.log(word);
+
+            if (word in translations_array) {
+
+                if (translations_array[word] != '') {
+                    return unescapeHtml(translations_array[word])
+                } else {
+                    return unescapeHtml(word);
+                }
+
+            } else {
+                return unescapeHtml(word);
+            };
+        }
+
+        function translate_by_class() {
+            $('.translate').each(function() {
+                $(this).text(translate_this($(this).attr('translate')));
+            })
+        }
+    </script>
+
+    <script type="text/javascript" src="https://onb.digital/items/general/js/jquery-1.11.3.min.js"></script>
+    <script src="https://onb.digital/items/frontend/js/packery.pkgd.min.js" type="text/javascript"></script>
+    <script src="https://onb.digital/items/frontend/js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://onb.digital/items/general/js/jquery-touch-punch.js" type="text/javascript"></script>
+    <script src="https://onb.digital/items/frontend/js/placeholders.min.js" type="text/javascript"></script>
+    <script src="https://onb.digital/items/frontend/js/lightbox-2.6.min.js" type="text/javascript"></script>
+    <script src="https://onb.digital/items/frontend/js/easing.js" type="text/javascript"></script>
+    <script src="https://onb.digital/items/frontend/js/responsive.js" type="text/javascript"></script>
+    <script src="https://onb.digital/items/frontend/js/dat.gui.min.js?ver=" type="text/javascript"></script>
+
+    <!-- 3d stuff  -->
+	<!-- dieses externe css macht probleme. bremst/stoppt die app. 
+		aWieser, 20250122.
+		<link rel="stylesheet" href="https://treat.agency/items/frontend/css/treat_kit.css" title="Kit" type="text/css" media="screen" charset="utf-8">-->
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--<script src="js/three.module.js"></script>-->
+    <!--<script src="https://onb.digital/items/frontend/js/three.min.js"></script>-->
+    <!--<script src="https://onb.digital/items/frontend/js/OrbitControls.js"></script> -->
+    <!--<script src="https://onb.digital/items/frontend/js/tweenjs.min.js"></script> -->
+    <!--<script src="https://onb.digital/items/frontend/js/treat.js?ver=2"></script> -->
+    <!-- years slider -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- end years slider -->
+    <script src="https://onb.digital/items/frontend/js/jquery.lazy-master/jquery.lazy.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://onb.digital/items/frontend/js/desktop.js?ver=3"></script>
+
+</head>
+
+<body class="no_scrollbar">
+    <!-- 3d stuff -->
+    <div id="threed">
+        <!-- <div id="threed_logo">
+            <img src="https://onb.digital/items/frontend/img/logo/onb_logo.png" alt="">
+        </div> -->
+        <div id="control_btns_container">
+            <div id="reset_3d" class="control_btn_3d">
+                <img src="https://onb.digital/items/frontend/img/3d_reset.png" alt="">
+            </div>
+            <div id="quit_3d" class="control_btn_3d">
+                <img src="https://onb.digital/items/frontend/img/3d_quit.png" alt="">
+            </div>
+            <div id="help_3d" class="control_btn_3d">
+                <img src="https://onb.digital/items/frontend/img/3d_help.svg" alt="">
+            </div>
+            <div id="reset_tooltip" class="tooltip_3d">Neu zentrieren</div>
+            <div id="quit_tooltip" class="tooltip_3d">Schließen</div>
+            <div id="help_tooltip" class="tooltip_3d">Hilfe</div>
+        </div>
+        <div id="help_3d_layer">
+            <div id="help_3d_layer_background">
+
+            </div>
+            <div id="help_3d_layer_inner">
+
+                <div id="info_cookie_header">
+                    Schweben Sie durchs Archiv!                </div>
+
+                <div id="info_cookie_text">
+                    Sie können die Perspektive des Raumes verändern, indem Sie die linke Maustaste gedrückt halten und bewegen. Durch Scrollen können Sie die Ansicht verkleinern oder vergrößern.<br><br>
+Die Objekte sind nach Themen oder Begriffen gruppiert.<br><br>
+Klicken Sie auf ein Element, um es näher zu betrachten. Sie können ein Objekt nach dem anderen entdecken, indem Sie es einmalig anklicken. Durch das Anklicken wird das jeweilige Element in der Bildmitte zentriert.<br><br> Sie möchten mehr über das Objekt erfahren? Durch einen zweiten Klick öffnen Sie die Detailseite des ausgewählten Elements.                </div>
+
+                <div id="help_3d_layer_inner_close" style="max-width: 230px; padding: 5px;">
+                    Viel Spaß beim Erkunden!                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- end 3d stuff -->
+
+    <div id="content_background" class="hide_on_3d">
+
+    </div>
+    <div id="auto_complete_background">
+
+    </div>
+
+    <div id="loading">
+        <!-- Loading... -->
+        <img src="https://onb.digital/items/frontend/img/loading_gif.gif" alt="">
+    </div>
+
+    <div id="content">
+        <div id="top_swipe" class="hide_on_3d">
+            <hr>
+        </div>
+        <!-- content -->
+        <div id="container">
+            <!-- container -->
+
+
+            <!-- info pop up -->
+            <div id="info_cookie_background" class="hide_on_ie">
+            </div>
+            <div class="show_on_ie" style="
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: black;
+                opacity: 0.5;
+                z-index: 6;
+                ">
+            </div>
+
+            <div id="info_cookie_container" class='no_scrollbar'>
+
+                <div id="info_cookie">
+                    <div id="info_cookie_header"> Willkommen auf <span class='cookie_bold'>ÖNB Digital</span></div>
+
+                    <!-- 1 text -->
+                    <div id="info_cookie_text_1">
+                        <span class="hide_on_ie">
+                            Diese Webseite verwendet Cookies. <br>
+                          Nähere Informationen dazu und zur Verwendung Ihrer Daten finden Sie unter dem Link &quot;<a style=&quot;text-decoration: none;color: inherit;border-bottom: 1px solid;&quot; target=&quot;__blank&quot; href="https://www.onb.ac.at/datenschutz">Datenschutz</a>&quot;. <br><br>
+                          Klicken Sie auf &quot;Ich bin einverstanden&quot;, um den Einsatz von Cookies zu akzeptieren und unsere Webseite besuchen zu können.                        </span>
+                    </div>
+
+                    <!-- 2 text -->
+                    <div id="info_cookie_text">
+                        <span class="hide_on_ie">
+                            <br> <br> In diesem Portal finden Sie die digitalen Bestände der Österreichischen Nationalbibliothek: Bücher, Fotografien, Grafiken und vieles mehr.  <br><br>                        </span>
+                        <span class="show_on_ie" style="display: none">
+                            Das ÖNB Digital wird von Ihren Browser nicht unterstützt. Bitte benutzen Sie Chrome, Firefox, Safari oder Edge.                        </span>
+                    </div>
+
+                    <!-- 1 btn -->
+                    <div id="info_cookie_close_1" class=" pointer hide_on_ie">
+                        Ich bin einverstanden                    </div>
+
+                    <!-- 2 btn -->
+                    <div id="info_cookie_close" class="pointer hide_on_ie">
+                        Starten Sie jetzt                    </div>
+
+                    <div id="info_bottom_part">
+                        <div id="version">
+                            V 2.0 Build 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nav_bottom">
+                <a href="https://onb.digital/discover" class="tap_btn_link">
+                    <div id="entdecken_tap" class="pointer tap_btn">
+
+                        <img src="https://onb.digital/items/frontend/img/entdecken.svg" alt="">
+                        <span class="mobile_bottom_nav_text">
+                            Entdecken                        </span>
+                    </div>
+                </a>
+                <a href="https://onb.digital/search" class="tap_btn_link">
+                    <div id="search_tap" class="pointer tap_btn">
+                        <img src="https://onb.digital/items/frontend/img/search_icon.svg" alt="">
+                        <!-- <img src="https://onb.digital/items/frontend/img/search.png" alt=""> -->
+                        <span class="mobile_bottom_nav_text">
+                            Suchen                        </span>
+                    </div>
+                </a>
+                <a id="favs_tap_link" href="https://onb.digital/favourites" class="tap_btn_link">
+                    <div id="favs_tap" class="pointer tap_btn">
+                        <img src="https://onb.digital/items/frontend/img/star_white.svg" alt="">
+                        <span class="mobile_bottom_nav_text">
+                            Favoriten                        </span>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <!-- desktop side nav -->
+            <div id="nav_side">
+
+
+
+                <div id="side_taps">
+                    <a id="entdecken_tap_d" class="side_tap pointer" href="https://onb.digital/discover">
+                        <span class="side_tap_lable">
+                            Entdecken                        </span>
+                        <img src="https://onb.digital/items/frontend/img/entdecken.svg" alt="">
+                    </a>
+
+                    <a id="search_tap_d" class="side_tap pointer" href="https://onb.digital/search">
+                        <span class="side_tap_lable">
+                            Suchen                        </span>
+                        <img src="https://onb.digital/items/frontend/img/search_icon.svg" alt="">
+                        <!-- <img src="https://onb.digital/items/frontend/img/search.png" alt=""> -->
+                    </a>
+                    <a id="favs_tap_d" class="side_tap pointer" href="https://onb.digital/favourites">
+                        <span class="side_tap_lable">
+                            Favoriten                        </span>
+                        <img src="https://onb.digital/items/frontend/img/star_white.svg" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
+            <!-- main nav -->
+            <div id="search_logo_nav" class="hide_on_3d no_transition">
+
+
+                <!-- desktop -->
+
+                <div id="logo" class="pointer">
+                    <a target="_blank" href="https://www.onb.ac.at">
+                        <img src="https://onb.digital/items/frontend/img/logo/ONB_Logo_rgb_RZ2.png" alt="">
+                    </a>
+                    <a href="https://onb.digital/">
+                        <div id="nav_website_name">ÖNB Digital</div>
+                    </a>
+                </div>
+
+
+                <div id="search_field_icon" class="">
+                    <input id="search_field" placeholder="Ihr Suchbegriff" type="text" autocomplete="off" value="Geheimschrift Brief" name="search">
+                    <div id="search_btn_container">
+                        <!-- <img id="search_btn" class="pointer" src="https://onb.digital/items/frontend/img/search.png" alt=""> -->
+                        <img id="search_btn" class="pointer" src="https://onb.digital/items/frontend/img/search_icon.svg" alt="">
+                    </div>
+
+                    <div id="auto_complete_container">
+                        <!-- loop start -->
+                        <div class="auto_complete_result pointer">
+                            <div class="auto_complete_keywords">
+                            </div>
+                            <img src="https://onb.digital/items/frontend/img/search_icon_black.svg" alt="">
+                        </div>
+                        <!-- loop end -->
+                    </div>
+                    <div id="full_text_flag_container">
+
+                        <div id="full_text_flag" class="set_from_query">
+                            <div id="full_text_flag_text">Volltextsuche</div>
+                            <div id="full_text_flag_button" class="slider_btn_container">
+                                <div class="slider_btn"></div>
+                            </div>
+                        </div>
+
+                        <div id="full_text_info_icon">?</div>
+
+                        <div id="full_text_info_text">
+                            Die <bold>Volltextsuche</bold>  durchsucht die Objekte auch inhaltlich. Sie zeigt Ihnen, wie oft Ihr Suchbegriff im jeweiligen Objekt vorkommt und in welchem Kontext Ihr Suchbegriff steht.                        </div>
+                    </div>
+                </div>
+
+                <div id="desktop_nav_menu">
+                    <a class="desktop_nav_menu_item" target="__blank" href="https://www.onb.ac.at/nutzung  ">
+                        Nutzung                    </a>
+                    <a class="desktop_nav_menu_item" target="__blank" href="https://www.onb.ac.at/impressum">
+                        Impressum                    </a>
+                    <a class="desktop_nav_menu_item" target="__blank" href="https://www.onb.ac.at/datenschutz ">
+                        Datenschutz                    </a>
+
+                    <a class="desktop_nav_menu_item" target="__blank" href="https://onb.digital/FAQs.html">
+                        FAQs                    </a>
+
+                    <div id="menu_lang_btn_container" class="desktop_nav_menu_item  pointer ">
+                        <div id="menu_lang_btn" lang="LANG_DE" class="">
+                            DE                        </div>
+                        <span class="arrow_down"></span>
+
+                        <div id="menu_lang_btn_drop">
+                            <div lang="LANG_EN" class="lang_btn ">EN</div>
+                            <div lang="LANG_DE" class="lang_btn active">DE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mobile -->
+                <div id="mobile_menu_btn" class="mobile_menu_btn">
+                    <hr id="menu_hr_1" class="mobile_menu_hr">
+                    <hr id="menu_hr_2" class="mobile_menu_hr">
+                    <hr id="menu_hr_3" class="mobile_menu_hr">
+                </div>
+
+                <div id="lang_btn" lang="LANG_EN" class="mobile_menu_btn nav_btn lang_btn pointer">EN</div>
+                <div id="mobile_menu_dd">
+                    <a class="mobile_menu_item" target="__blank" href="https://www.onb.ac.at/nutzung  ">
+                        Nutzung                    </a>
+                    <a class="mobile_menu_item" target="__blank" href="https://www.onb.ac.at/impressum">
+                        Impressum                    </a>
+                    <a class="mobile_menu_item" target="__blank" href="https://www.onb.ac.at/datenschutz ">
+                        Datenschutz                    </a>
+
+                    <a class="mobile_menu_item" target="__blank" href="https://onb.digital/FAQs.html">
+                        FAQs                    </a>
+                </div>
+
+
+                                    <div id="redBanner">
+                        <div id="banner_title" class="bold">
+                            Noch mehr finden mit Volltextsuche                        </div>
+                        <div id="banner_text">
+                            Die neue zusätzliche Suchmöglichkeit durchsucht die Objekte auch inhaltlich und kann unter dem Suchfeld aktiviert werden.                        </div>
+                    </div>
+                
+            </div>
+
+
+            <!-- cookies -->
+            <script>
+                                    $('#info_cookie_container').css("display", "flex");
+                    $('#info_cookie_background').fadeIn();
+                            </script>
+
+            <!-- 
+            <script>
+                // IE  script here in case of js errors on IE also in plain js only no jq       
+                var ua = window.navigator.userAgent;
+
+                var msie = ua.indexOf('MSIE ');
+                var trident = ua.indexOf('Trident/');
+
+                if (msie > 0 || trident > 0) // If Internet Explorer
+                {
+                    console.log('IE')
+                    var show = document.getElementsByClassName("hide_on_ie");
+                    for (var i = 0; i < show.length; i++) {
+                        console.log(show[i]);
+                        show[i].style.display = "none";
+                    }
+                    var show = document.getElementsByClassName("show_on_ie");
+                    for (var i = 0; i < show.length; i++) {
+                        show[i].style.display = "inline-block";
+                    }
+                }
+            </script> -->
+<style>
+    #search_tap,
+    #search_tap_d {
+        opacity: 1;
+    }
+
+    html,
+    body {
+        overflow: hidden;
+    }
+
+    /* #loading {
+        display: none; 
+    } */
+
+    .filter_drop_down_btn {
+        display: block;
+    }
+
+    #redBanner {
+        width: 97%;
+        max-width: 1500px;
+        padding: 14px 15px;
+        top: calc(100% - 11px);
+    }
+
+    @media screen and (max-width: 1200px) {
+        #redBanner {
+            width: calc(100% - 41px);
+            max-width: 1500px;
+            padding: 14px 15px;
+
+        }
+    }
+
+    </style>
+<div id="phpsearch_container">
+    <!-- scroll up element -->
+    <div id="swipe_up_container" class="hide_on_3d">
+        <div id="click" class="pointer"></div>
+        <hr class="swipe_up_hr pointer">
+        <div id="swipe_up_header" class="pointer" >
+
+                                                Suche filtern                            
+        </div>
+        <div id="swipe_up_inner">
+            <div id="filters_container">
+                <div id="active_filters" class='filter_block'>
+                    <div class="active_filter_btns">
+                                            </div>
+                </div>
+                <div class="filter_block">
+                    <div class="filter_header">
+                        Sortieren nach                    </div>
+                                        <select id="sort_selector">
+                        <option id="select_sort_relevance" class="sort_nach select_sort_nach filter_btn" selected sort="" order="">
+                            Relevanz                        </option>
+
+                        <option id="select_recently_added" class="sort_nach select_sort_nach filter_btn"  sort="digitized" order="desc">
+                            Neu aufgenommen                        </option>
+                        <option id="select_sort_random" class="sort_nach select_sort_nach filter_btn"  sort="random" order="">
+                            Zufällig                        </option>
+                        <option id="select_sort_date_desc" class="sort_nach select_sort_nach filter_btn"  sort="startdate" order="asc">
+                            Datierung aufsteigend                        </option>
+                        <option id="select_sort_date_asc" class="sort_nach select_sort_nach filter_btn"  sort="startdate" order="desc">
+                            Datierung absteigend                        </option>
+                    </select>
+
+                </div>
+                <div id="facet_html">
+                                            
+    
+
+
+    
+
+    <div class='filter_block facets '>
+            </div>
+
+                                    </div>
+            </div>
+
+
+        </div>
+        <div id="floating_results_count" class="pointer" query="">
+            <span class="floating_results_count_text">
+                <b class="search_count"></b>
+                Ergebnisse            </span>
+            <img src="https://onb.digital/items/frontend/img/arrow_white.svg" alt="">
+        </div>
+    </div>
+
+    <div id="results_main_container">
+
+        <!-- info and btns under the search field  -->
+        <div id="search_info_btns" class="hide_on_3d lang_0 searched">
+            <div id="search_info">
+                <div id="search_info_text">
+                                            <b class="search_count">2 </b>
+                        <span id="ergebnisse">
+                                                            Ergebnisse                                                    </span>
+                                    </div>
+
+
+                <div id="search_sort_btn" class=" search_btn pointer">
+                    <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.07 14.57">
+                        <defs>
+                            <style>
+                                .cls-3 {
+                                    fill: #b7422f;
+                                    stroke: #b7422f;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.7px;
+                                }
+                            </style>
+                        </defs>
+                        <title>sort</title>
+                        <line class="cls-0 cls-00 cls-3" y1="0.98" x2="11.43" y2="0.98" />
+                        <line class="cls-0 cls-00 cls-3" x1="4.99" y1="8.72" x2="11.43" y2="8.72" />
+                        <line class="cls-0 cls-00 cls-3" x1="2.02" y1="4.85" x2="11.43" y2="4.85" />
+                        <line class="cls-0 cls-00 cls-3" x1="7.95" y1="12.58" x2="11.43" y2="12.58" />
+                        <line class="cls-0 cls-00 cls-3" x1="17.7" x2="17.7" y2="13.17" />
+                        <polyline class="cls-0 cls-00 cls-3" points="21.47 9.6 17.7 13.37 13.94 9.6" />
+                    </svg>
+                </div>
+                <div id="search_share_btn" class="search_btn pointer search_share_btn">
+                    <!-- <img src="https://onb.digital/items/frontend/img/share.svg" alt=""> -->
+                    <svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.93 61.36">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #b7422f;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 4.5px;
+                                }
+                            </style>
+                        </defs>
+                        <title>share</title>
+                        <path class="cls-0 cls-1" d="M234,266.4V253.67c-.67,0-1.35-.08-2-.08a27.86,27.86,0,0,0-26.71,19.94,27.88,27.88,0,0,1,26.71-35.8c.68,0,1.36,0,2,.08V224.75l26.18,20.82Z" transform="translate(-201.81 -220.08)" />
+                    </svg>
+                    <span class="share_lable">
+
+                        Suchergebnis als Link kopieren                    </span>
+                    <span class="copied">
+                    </span>
+                </div>
+            </div>
+            <div id="view_style">
+                                <div id="" type='view_list' class="active view_btn search_btn pointer">
+                    <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.11 60.11">
+                        <defs>
+                            <style>
+                                .cls-view {
+                                    fill: none;
+                                    stroke: #b7422f;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 3px;
+                                }
+
+                                .cls-view2 {
+                                    fill: #b7422f;
+                                }
+                            </style>
+                        </defs>
+                        <title>List view</title>
+                        <line class="cls-view" x1="24.51" y1="20.55" x2="44.8" y2="20.55" />
+                        <line class="cls-view" x1="24.51" y1="39.56" x2="44.8" y2="39.56" />
+                        <line class="cls-view" x1="24.51" y1="30.06" x2="44.8" y2="30.06" />
+                        <circle class="cls-view2" cx="17.71" cy="20.55" r="2.82" />
+                        <circle class="cls-view2" cx="17.71" cy="30.06" r="2.82" />
+                        <circle class="cls-view2" cx="17.71" cy="39.56" r="2.82" />
+                    </svg>
+                </div>
+
+                <div id="" type='view_tile' class="view_btn search_btn pointer">
+
+                    <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.11 60.11">
+                        <defs>
+                            <style>
+                                .cls-view {
+                                    fill: none;
+                                    stroke: #b7422f;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 3px;
+                                }
+
+                                .cls-view2 {
+                                    fill: #b7422f;
+                                }
+                            </style>
+                        </defs>
+                        <rect class="cls-view2" x="16.05" y="16.05" width="11.97" height="11.97" />
+                        <rect class="cls-view2" x="32.09" y="16.05" width="11.97" height="11.97" />
+                        <rect class="cls-view2" x="32.09" y="32.09" width="11.97" height="11.97" />
+                        <rect class="cls-view2" x="21.43" y="37.47" width="11.97" height="11.97" transform="translate(65.49 10.66) rotate(90)" />
+                    </svg>
+                </div>
+
+
+
+            </div>
+        </div>
+
+                <div id="sort_drop" class="hide_on_3d">
+            <div class='filter_block'>
+                <div class="filter_header">
+                    Sortieren nach                </div>
+                <div class="filter_btns">
+                    <div id="sort_relevance" sort="" order="" class="filter_btn sort_nach pointer active">
+                        Relevanz                    </div>
+                    <div id="recently_added" sort="digitized" order="desc" class="filter_btn sort_nach pointer ">
+                        Neu aufgenommen                    </div>
+                    <div id="sort_random" sort="random" order="" class="filter_btn sort_nach pointer ">
+
+                        Zufällig                    </div>
+                    <div id="sort_date" sort="startdate" order="asc" class="filter_btn sort_nach pointer ">
+                        Datierung aufsteigend                    </div>
+                    <div id="sort_date" sort="startdate" order="desc" class="filter_btn sort_nach pointer ">
+                        Datierung absteigend                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end info and btns under the search field  -->
+
+        <!-- results -->
+        <div id="search_results_container" class="hide_on_3d">
+            
+
+            <hr class="search_line">
+            <div id="result_10205419" class="search_result search_result_3_0 search_result_4_0" item_id="10205419">
+                <!-- add to favs -->
+                <div class="box_flag" item_id="10205419">
+                    <svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.07 47.62">
+
+                        <defs>
+
+                        </defs>
+                        <title>star</title>
+                        <polygon class="star_icon" points="25.04 4.52 31.45 17.5 45.77 19.59 35.41 29.69 37.85 43.97 25.04 37.23 12.22 43.97 14.67 29.69 4.3 19.59 18.63 17.5 25.04 4.52" />
+                    </svg>
+
+                </div>
+                <!-- result img -->
+                <a href="https://onb.digital/result/10205419" class="result_img">
+
+                                            <img class=" pointer"  src =" https://digital.onb.ac.at/rep/access/thumbnail/10205419" alt="">
+                    
+                </a>
+
+                <div class="result_text">
+                    <!-- media type -->
+                    <div class="result_text_top">
+                                                    <span class="translate" translate="RARE">
+                                Papyrus                            </span>
+                                            </div>
+                    <!-- title -->
+                    <div class="result_text_middle">
+
+
+                        <a href="https://onb.digital/result/10205419">
+                                                            Brief in Geheimschrift, ein zweiter Brief und Vertrag, unpubliziert (P.Vindob. A. P. 11016)                                                    </a>
+                    </div>
+                    <!-- persons -->
+                    <div class="result_text_bottom">
+                        <a href="https://onb.digital/result/10205419">
+                                                    </a>
+                    </div>
+                    <!-- publisher -->
+                    <div class="result_text_bottom">
+                        <a href="https://onb.digital/result/10205419">
+                                                    </a>
+                    </div>
+                    <!-- date -->
+                    <div class="result_text_bottom date">
+                        <a href="https://onb.digital/result/10205419">
+                                                            Ägypten, Ihnas                                                                                        3. Jh. AH / 9. Jh. n. Chr.                                                    </a>
+                    </div>
+
+                                    </div>
+                <!--
+                <div class="search_btn result_3d_btn pointer" item_id="10205419">
+                <img src="https://onb.digital/items/frontend/img/result_share.svg" alt="">
+                <div class="result_3d_lable">
+                    
+                    Verwandtes Entdecken                </div>
+            </div> -->
+
+
+                <div id="full_text_element_0" class='full_text_element'>
+                    <div class="full_text_results_header bold">
+                        Treffervorschau                        <!-- <span class="full_text_results_count"></span>
+                        Treffer -->
+                    </div>
+                    <div class="full_text_results_container">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <hr class="search_line">
+            <div id="result_1005E7AB" class="search_result search_result_3_1 search_result_4_1" item_id="1005E7AB">
+                <!-- add to favs -->
+                <div class="box_flag" item_id="1005E7AB">
+                    <svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.07 47.62">
+
+                        <defs>
+
+                        </defs>
+                        <title>star</title>
+                        <polygon class="star_icon" points="25.04 4.52 31.45 17.5 45.77 19.59 35.41 29.69 37.85 43.97 25.04 37.23 12.22 43.97 14.67 29.69 4.3 19.59 18.63 17.5 25.04 4.52" />
+                    </svg>
+
+                </div>
+                <!-- result img -->
+                <a href="https://onb.digital/result/1005E7AB" class="result_img">
+
+                                            <img class=" pointer"  src =" https://digital.onb.ac.at/rep/access/thumbnail/1005E7AB" alt="">
+                    
+                </a>
+
+                <div class="result_text">
+                    <!-- media type -->
+                    <div class="result_text_top">
+                                                    <span class="translate" translate="RARE">
+                                Papyrus                            </span>
+                                            </div>
+                    <!-- title -->
+                    <div class="result_text_middle">
+
+
+                        <a href="https://onb.digital/result/1005E7AB">
+                                                            Brief in Geheimschrift, ein zweiter Brief und Vertrag, unpubliziert (P.Vindob. A. P. 11016)                                                    </a>
+                    </div>
+                    <!-- persons -->
+                    <div class="result_text_bottom">
+                        <a href="https://onb.digital/result/1005E7AB">
+                                                    </a>
+                    </div>
+                    <!-- publisher -->
+                    <div class="result_text_bottom">
+                        <a href="https://onb.digital/result/1005E7AB">
+                                                    </a>
+                    </div>
+                    <!-- date -->
+                    <div class="result_text_bottom date">
+                        <a href="https://onb.digital/result/1005E7AB">
+                                                            Ägypten, Ihnas                                                                                        3. Jh. AH / 9. Jh. n. Chr.                                                    </a>
+                    </div>
+
+                                    </div>
+                <!--
+                <div class="search_btn result_3d_btn pointer" item_id="1005E7AB">
+                <img src="https://onb.digital/items/frontend/img/result_share.svg" alt="">
+                <div class="result_3d_lable">
+                    
+                    Verwandtes Entdecken                </div>
+            </div> -->
+
+
+                <div id="full_text_element_1" class='full_text_element'>
+                    <div class="full_text_results_header bold">
+                        Treffervorschau                        <!-- <span class="full_text_results_count"></span>
+                        Treffer -->
+                    </div>
+                    <div class="full_text_results_container">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+    <div class="search_result empty_search_result" style="height: 0;min-height: unset;"></div>
+    <div class="search_result empty_search_result" style="height: 0;min-height: unset;"></div>
+
+        </div>
+        <!-- end results -->
+
+
+
+    </div>
+</div>
+
+<script>
+    $('.facet_btn').each(function() {
+        var scroll_to = $(this).offset().top - $("#swipe_up_inner").offset().top - 10;
+        $(this).attr('scroll_to', scroll_to)
+    });
+    $('#swipe_up_inner .hide_if_empty').each(function() {
+        childe_1 = $(this).children('.filter_btns').children('.filter_btn');
+        childe_2 = $(this).children('.filter_drop_down').children('.filter_btn_dd');
+        if (childe_1.length == 0 && childe_2.length == 0) {
+            $(this).hide();
+        } else {
+            $(this).show();
+        }
+    })
+</script>			</div> <!-- content -->
+		</div> <!-- container -->
+	</body>
+</html>
